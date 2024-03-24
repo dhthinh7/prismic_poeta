@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Helvetica, Arial, sans-serif'
+}
+
+@layer base {
+  html {
+    @apply h-full scroll-smooth antialiased;
+  }
+  body {
+    @apply flex h-full flex-col;
+  }
+
+  main {
+    @apply flex-1;
+  }
+
+  #__next {
+    @apply contents;
+  }
+
+  .section {
+    @apply py-20;
+  }
+}
+
+

@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import { PrismicNextLink, PrismicPreview } from "@prismicio/next";
+import { createClient, repositoryName } from "@/prismicio";
+import '@/styles/globals.css'
+import Link from "next/link";
+import { PrismicText } from "@prismicio/react";
+import Header from "@/components/Header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        <section className="">
+          {children}
+        </section>
+        <PrismicPreview repositoryName={repositoryName} />
+      </body>
     </html>
   );
 }

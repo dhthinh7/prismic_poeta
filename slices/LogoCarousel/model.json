@@ -1,0 +1,38 @@
+{
+  "id": "logo_carousel",
+  "type": "SharedSlice",
+  "name": "LogoCarousel",
+  "description": "LogoCarousel",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "test": {
+          "type": "Link",
+          "config": {
+            "label": "test",
+            "select": "document"
+          }
+        }
+      },
+      "items": {
+        "logo": {
+          "type": "Image",
+          "config": {
+            "label": "Logo",
+            "constraint": {
+              "height": 34,
+              "width": 100
+            },
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

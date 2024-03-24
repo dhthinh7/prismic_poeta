@@ -1,0 +1,17 @@
+{
+  "format": "custom",
+  "id": "page",
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      }
+    }
+  },
+  "label": "Page",
+  "repeatable": true,
+  "status": true
+}
