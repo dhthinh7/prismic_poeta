@@ -8,7 +8,8 @@ interface IButton {
   color?: Color;
   className?: string;
   href?: string;
-  children?: React.ReactNode;
+  children: React.ReactNode;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 const baseStyles = {
   solid:
@@ -26,7 +27,7 @@ const variantStyles = {
       'bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
   },
   outline: {
-    orange: 'bg-orange-600 text-white ',
+    orange: 'text-orange-500 hover:text-orange-600 active:text-orange-600 focus-visible:outline-white border-orange-500 hover:border-orange-600',
     slate:
       'ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300',
     white:

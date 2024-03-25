@@ -1,0 +1,48 @@
+{
+  "id": "address",
+  "type": "SharedSlice",
+  "name": "Address",
+  "description": "Address",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Description",
+            "placeholder": ""
+          }
+        },
+        "cta_button": {
+          "type": "Text",
+          "config": {
+            "label": "CTA Button",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -14,6 +14,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "card-name-light": '#999999'
+      },
+      boxShadow: {
+        "primary-double": "0 4px 6px 1px rgb(0 0 0/0.1), 0 2px 4px -2px rgb(0 0 0/0.1)"
+      },
+      backgroundColor: {
+        primary: "rgba(237, 243, 251, 1)"
+      }
     },
   },
   plugins: [],

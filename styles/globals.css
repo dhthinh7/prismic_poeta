@@ -27,4 +27,18 @@ body {
   }
 }
 
+.section-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 10px;
+}
 
+.text-tittle {
+  font-family: helvetica, serif;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  color: #231f20;
+  font-size: 32px;
+  text-transform: none;
+}

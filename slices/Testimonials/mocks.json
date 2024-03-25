@@ -1,0 +1,29 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "declared",
+				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"value": "wolf",
+				"type": "Text"
+			},
+			"name": {
+				"__TYPE__": "FieldContent",
+				"value": "halfway",
+				"type": "Text"
+			},
+			"job_title": {
+				"__TYPE__": "FieldContent",
+				"value": "properly",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

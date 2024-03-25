@@ -10,12 +10,16 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@prismicio/client": "^7.3.1",
     "@prismicio/next": "^1.5.0",
     "@prismicio/react": "^2.7.3",
     "next": "14.1.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "swiper": "^11.0.4"
   },
   "devDependencies": {
     "@slicemachine/adapter-next": "^0.3.37",

@@ -1,0 +1,57 @@
+{
+  "id": "showcase",
+  "type": "SharedSlice",
+  "name": "Showcase",
+  "description": "Showcase",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "cta_label": {
+          "type": "Text",
+          "config": {
+            "label": "CTA Label",
+            "placeholder": ""
+          }
+        },
+        "cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "CTA Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "info_image": {
+          "type": "Image",
+          "config": {
+            "label": "Info image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

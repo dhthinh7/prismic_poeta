@@ -1,5 +1,5 @@
 {
-  "format": "custom",
+  "format": "page",
   "id": "home_page",
   "label": "Home Page",
   "repeatable": false,
@@ -27,6 +27,30 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "certificates": {
+              "type": "SharedSlice"
+            },
+            "product_showcase": {
+              "type": "SharedSlice"
+            },
+            "showcase": {
+              "type": "SharedSlice"
+            },
+            "testimonials": {
+              "type": "SharedSlice"
+            },
+            "address": {
+              "type": "SharedSlice"
+            },
+            "service_cards": {
+              "type": "SharedSlice"
+            },
+            "text_content": {
+              "type": "SharedSlice"
+            },
+            "logo_carousel": {
+              "type": "SharedSlice"
+            },
             "hero": {
               "type": "SharedSlice"
             }

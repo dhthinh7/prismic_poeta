@@ -34,7 +34,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                   {slice.primary.primary_button_label}
                 </PrismicNextLink>
               </Button>
-              <Button variant="outline" color="orange">
+              <Button variant="outline" color="white">
                 <PrismicNextLink field={slice.primary.primary_button_link}>
                   {slice.primary.secondary_button_label}
                 </PrismicNextLink>

@@ -1,0 +1,74 @@
+{
+  "id": "service_cards",
+  "type": "SharedSlice",
+  "name": "ServiceCards",
+  "description": "ServiceCards",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "icon": {
+          "type": "Image",
+          "config": {
+            "label": "Icon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Description",
+            "placeholder": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "gridWithoutIcon",
+      "name": "Grid without icon",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Description",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

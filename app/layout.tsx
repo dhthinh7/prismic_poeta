@@ -7,6 +7,9 @@ import Link from "next/link";
 import { PrismicText } from "@prismicio/react";
 import Header from "@/components/Header/Header";
 
+import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
+import Footer from "@/components/Footer/Footer";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -26,6 +29,7 @@ export default function RootLayout({
         <section className="">
           {children}
         </section>
+        <Footer />
         <PrismicPreview repositoryName={repositoryName} />
       </body>
     </html>

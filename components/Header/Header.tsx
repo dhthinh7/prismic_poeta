@@ -1,21 +1,12 @@
-import { createClient } from "@/prismicio";
-import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import React from "react";
-
-import './Style.css'
-import SubMenuItem from "@/slices/SubMenuItem";
-import { SliceZone } from "@prismicio/react";
-import { components } from "@/slices";
-import MenuItem from "@/slices/MenuItem";
-import SubMenuHeader from "./SubMenuHeader";
+import { createClient } from "@/prismicio";
+import { PrismicNextImage } from "@prismicio/next";
 import MenuItems from "./MenuItems";
-
-
+import './Style.css'
 
 export default async function Header() {
   const client = createClient();
   const layout = await client.getSingle('layout')
-  let menuItemActiveId = ''
 
   return <div className="sticky top-0 z-10">
     <div className="bg-[#223c4db2] w-full relative">

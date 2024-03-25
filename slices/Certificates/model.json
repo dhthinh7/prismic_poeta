@@ -1,8 +1,8 @@
 {
-  "id": "logo_carousel",
+  "id": "certificates",
   "type": "SharedSlice",
-  "name": "LogoCarousel",
-  "description": "LogoCarousel",
+  "name": "Certificates",
+  "description": "Certificates",
   "variations": [
     {
       "id": "default",
@@ -11,16 +11,21 @@
       "version": "initial",
       "description": "Default",
       "imageUrl": "",
-      "primary": {},
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        }
+      },
       "items": {
-        "logo": {
+        "image": {
           "type": "Image",
           "config": {
-            "label": "Logo",
-            "constraint": {
-              "height": 34,
-              "width": 100
-            },
+            "label": "Image",
+            "constraint": {},
             "thumbnails": []
           }
         }
