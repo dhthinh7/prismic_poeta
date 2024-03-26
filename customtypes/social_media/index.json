@@ -1,23 +1,24 @@
 {
   "format": "custom",
-  "id": "page",
-  "label": "Page",
-  "repeatable": true,
+  "id": "social_media",
+  "label": "Social Media",
+  "repeatable": false,
   "status": true,
   "json": {
     "Main": {
       "uid": {
+        "type": "UID",
         "config": {
-          "label": "UID"
-        },
-        "type": "UID"
+          "label": "uid",
+          "placeholder": ""
+        }
       },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "hero": {
+            "social_media": {
               "type": "SharedSlice"
             }
           }

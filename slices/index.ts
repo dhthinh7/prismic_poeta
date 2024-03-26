@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 export const components = {
   address: dynamic(() => import("./Address")),
   certificates: dynamic(() => import("./Certificates")),
+  footer_item: dynamic(() => import("./FooterItem")),
   heading: dynamic(() => import("./Heading")),
   hero: dynamic(() => import("./Hero")),
   logo_carousel: dynamic(() => import("./LogoCarousel")),
@@ -12,6 +13,7 @@ export const components = {
   product_showcase: dynamic(() => import("./ProductShowcase")),
   service_cards: dynamic(() => import("./ServiceCards")),
   showcase: dynamic(() => import("./Showcase")),
+  social_media: dynamic(() => import("./SocialMedia")),
   sub_menu_item: dynamic(() => import("./SubMenuItem")),
   testimonials: dynamic(() => import("./Testimonials")),
   text_content: dynamic(() => import("./TextContent")),

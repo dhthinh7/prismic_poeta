@@ -1,0 +1,35 @@
+{
+  "id": "social_media",
+  "type": "SharedSlice",
+  "name": "SocialMedia",
+  "description": "SocialMedia",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "CTA Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "icon": {
+          "type": "Image",
+          "config": {
+            "label": "Icon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

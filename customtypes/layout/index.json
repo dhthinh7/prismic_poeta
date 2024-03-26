@@ -42,6 +42,87 @@
           }
         }
       }
+    },
+    "footer": {
+      "cta_logo_link": {
+        "type": "Link",
+        "config": {
+          "label": "CTA logo link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "cta_link_logo": {
+        "type": "Image",
+        "config": {
+          "label": "CTA Link logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "address": {
+        "type": "Text",
+        "config": {
+          "label": "Address",
+          "placeholder": ""
+        }
+      },
+      "phone_number": {
+        "type": "Text",
+        "config": {
+          "label": "Phone number",
+          "placeholder": ""
+        }
+      },
+      "email": {
+        "type": "Text",
+        "config": {
+          "label": "Email",
+          "placeholder": ""
+        }
+      },
+      "social_media": {
+        "type": "Link",
+        "config": {
+          "label": "Social Media",
+          "select": "document",
+          "customtypes": ["social_media"]
+        }
+      },
+      "copy_right": {
+        "type": "Group",
+        "config": {
+          "label": "Copy Right",
+          "repeat": true,
+          "fields": {
+            "primary_text": {
+              "type": "Text",
+              "config": {
+                "label": "Primary text",
+                "placeholder": ""
+              }
+            },
+            "secondary_text": {
+              "type": "Text",
+              "config": {
+                "label": "Secondary text",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "footer_item": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -1,0 +1,38 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "movie",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"cta_label",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "imagine",
+							"type": "Text"
+						}
+					],
+					[
+						"cta_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://twitter.com"
+							}
+						}
+					]
+				]
+			}
+		]
+	}
+]
