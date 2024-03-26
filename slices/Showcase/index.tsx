@@ -23,6 +23,7 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
           <div className="flex items-center">
             <div className="w-1/2">
               <div>
+                {slice.variation === 'withCategory' && <p className="text-[#231f20]">{slice.primary.category}</p>}
                 <h2 className="text-tittle">{slice.primary.title}</h2>
                 <PrismicNextImage field={slice.primary.info_image} className="mt-3 mb-5"/>
                 <PrismicNextLink field={slice.primary.cta_link}>

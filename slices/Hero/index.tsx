@@ -1,8 +1,9 @@
+import HeroDefault from "@/components/Hero/HeroDefault";
+import HeroSecondary from "@/components/Hero/HeroSecondary";
+import HeroTertiary from "@/components/Hero/HeroTertiary";
 import BackgroundOverlay from "@/components/Shared/BackgroundOverlay";
-import Button from "@/components/Shared/Button";
-import RichText from "@/components/Shared/RichText";
 import { Content } from "@prismicio/client";
-import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
+import { PrismicNextImage } from "@prismicio/next";
 import { SliceComponentProps } from "@prismicio/react";
 
 /**
@@ -25,22 +26,9 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           <PrismicNextImage field={slice.primary.background_image} className="object-cover object-center h-full w-full"/>
         </div>
         <div className="max-w-[1400px] mx-auto">
-          <div className="ml-28 w-1/2">
-            <RichText field={slice.primary.title} className="font-semibold text-white leading-tight text-4xl mb-3"/>
-            <RichText field={slice.primary.description} className="font-semibold text-white leading-snug text-2xl"/>
-            <div className="flex gap-2 mt-4">
-              <Button className="bg-orange-600">
-                <PrismicNextLink field={slice.primary.primary_button_link}>
-                  {slice.primary.primary_button_label}
-                </PrismicNextLink>
-              </Button>
-              <Button variant="outline" color="white">
-                <PrismicNextLink field={slice.primary.primary_button_link}>
-                  {slice.primary.secondary_button_label}
-                </PrismicNextLink>
-              </Button>
-            </div>
-          </div>
+          {slice.variation === 'default' && <HeroDefault slice={slice} />}
+          {slice.variation === 'secondary' && <HeroSecondary slice={slice} />}
+          {slice.variation === 'tertiary' && <HeroTertiary slice={slice} />}
         </div>
       </div>
     </section>

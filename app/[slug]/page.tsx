@@ -10,7 +10,6 @@ export default async function Page({ params }: { params: IPage }) {
   const client = createClient();
 
   const page = await client.getByUID("page", params.slug);
-  console.log("page", page.data.slices);
 
   return (
     <div>

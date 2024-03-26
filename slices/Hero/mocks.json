@@ -54,12 +54,10 @@
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
-						"type": "heading2",
+						"type": "paragraph",
 						"content": {
-							"text": "We modernize software, unite systems, create custom mobile apps & migrate servers to the cloud",
-							"spans": []
-						},
-						"direction": "ltr"
+							"text": "Deserunt dolor occaecat minim cillum culpa voluptate eu tempor labore do qui est minim ad. Eiusmod cillum aliquip aute veniam exercitation amet. Ut nisi est adipisicing laborum sit aute mollit esse enim veniam velit do velit laboris."
+						}
 					}
 				]
 			},
@@ -90,9 +88,9 @@
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
-						"type": "heading2",
+						"type": "paragraph",
 						"content": {
-							"text": "Cheese"
+							"text": "Dolor Lorem dolore aliqua qui nulla occaecat qui aliquip est deserunt et. Ullamco excepteur enim voluptate incididunt quis labore nostrud cupidatat anim irure duis quis. Nulla non non mollit occaecat esse adipisicing dolor deserunt veniam."
 						}
 					}
 				]
@@ -159,9 +157,9 @@
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
-						"type": "heading2",
+						"type": "paragraph",
 						"content": {
-							"text": "Hidden"
+							"text": "Elit elit nostrud in tempor ea veniam fugiat amet ipsum proident ipsum. Occaecat anim fugiat ea commodo officia consectetur ullamco proident amet cillum."
 						}
 					}
 				]

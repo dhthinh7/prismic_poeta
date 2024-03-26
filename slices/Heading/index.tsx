@@ -1,5 +1,6 @@
 import Line from "@/components/Shared/Line";
 import { Content } from "@prismicio/client";
+import { PrismicNextLink } from "@prismicio/next";
 import { SliceComponentProps } from "@prismicio/react";
 
 /**
@@ -17,7 +18,9 @@ const Heading = ({ slice }: HeadingProps): JSX.Element => {
       data-slice-variation={slice.variation}
       className="mt-4"
     >
-      <p className="font-bold text-black text-base hover:text-red-500 hover:cursor-pointer mb-3">{slice.primary.label}</p>
+      <PrismicNextLink field={slice.primary.cta_link}>
+        <p className="font-bold text-black text-base hover:text-red-500 hover:cursor-pointer mb-3">{slice.primary.cta_label}</p>
+      </PrismicNextLink>
       <Line />
     </section>
   );

@@ -1,8 +1,8 @@
 {
-  "id": "heading",
+  "id": "breadcrumb",
   "type": "SharedSlice",
-  "name": "Heading",
-  "description": "Heading",
+  "name": "Breadcrumb",
+  "description": "Breadcrumb",
   "variations": [
     {
       "id": "default",
@@ -28,7 +28,23 @@
           }
         }
       },
-      "items": {}
+      "items": {
+        "cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "CTA Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "cta_label": {
+          "type": "Text",
+          "config": {
+            "label": "CTA Label",
+            "placeholder": ""
+          }
+        }
+      }
     }
   ]
 }

@@ -3,9 +3,16 @@
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
-			"label": {
+			"cta_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev"
+				}
+			},
+			"cta_label": {
 				"__TYPE__": "FieldContent",
-				"value": "black",
+				"value": "you",
 				"type": "Text"
 			}
 		},

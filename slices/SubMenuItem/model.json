@@ -12,19 +12,19 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Label",
+            "placeholder": "label"
+          }
+        },
         "link": {
           "type": "Link",
           "config": {
             "label": "Link",
             "placeholder": "",
             "select": null
-          }
-        },
-        "label": {
-          "type": "Text",
-          "config": {
-            "label": "Label",
-            "placeholder": "label"
           }
         }
       },

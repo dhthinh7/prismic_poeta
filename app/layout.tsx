@@ -4,7 +4,6 @@ import { PrismicNextLink, PrismicPreview } from "@prismicio/next";
 import { createClient, repositoryName } from "@/prismicio";
 import '@/styles/globals.css'
 import Link from "next/link";
-import { PrismicText } from "@prismicio/react";
 import Header from "@/components/Header/Header";
 
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS

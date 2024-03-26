@@ -4,14 +4,14 @@ import RichText from '../Shared/RichText'
 import Button from '../Shared/Button'
 import { PrismicNextLink } from '@prismicio/next'
 
-interface IHeroDefault {
+interface IHeroTertiary {
   slice: {
     slice_type: "hero";
     slice_label: null;
     id: string;
-  } & Content.HeroSliceDefault
+  } & Content.HeroSliceTertiary
 }
-export default function HeroDefault({ slice }: IHeroDefault) {
+export default function HeroTertiary({ slice }: IHeroTertiary) {
   return (
     <div className="ml-28 w-1/2">
       <RichText field={slice.primary.title} className="font-semibold text-white leading-tight text-4xl mb-3" />

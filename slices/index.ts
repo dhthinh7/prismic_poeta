@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 
 export const components = {
   address: dynamic(() => import("./Address")),
+  breadcrumb: dynamic(() => import("./Breadcrumb")),
   certificates: dynamic(() => import("./Certificates")),
   footer_item: dynamic(() => import("./FooterItem")),
   heading: dynamic(() => import("./Heading")),
@@ -15,6 +16,7 @@ export const components = {
   showcase: dynamic(() => import("./Showcase")),
   social_media: dynamic(() => import("./SocialMedia")),
   sub_menu_item: dynamic(() => import("./SubMenuItem")),
+  tech_showcase: dynamic(() => import("./TechShowcase")),
   testimonials: dynamic(() => import("./Testimonials")),
   text_content: dynamic(() => import("./TextContent")),
 };
