@@ -11,6 +11,7 @@ export const components = {
   hero: dynamic(() => import("./Hero")),
   logo_carousel: dynamic(() => import("./LogoCarousel")),
   menu_item: dynamic(() => import("./MenuItem")),
+  page_overview: dynamic(() => import("./PageOverview")),
   product_showcase: dynamic(() => import("./ProductShowcase")),
   service_cards: dynamic(() => import("./ServiceCards")),
   showcase: dynamic(() => import("./Showcase")),
@@ -20,4 +21,5 @@ export const components = {
   testimonials: dynamic(() => import("./Testimonials")),
   text: dynamic(() => import("./Text")),
   text_content: dynamic(() => import("./TextContent")),
+  youtube_video: dynamic(() => import("./YoutubeVideo")),
 };

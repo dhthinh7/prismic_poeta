@@ -25,6 +25,12 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "youtube_video": {
+              "type": "SharedSlice"
+            },
+            "page_overview": {
+              "type": "SharedSlice"
+            },
             "service_cards": {
               "type": "SharedSlice"
             },

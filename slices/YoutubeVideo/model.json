@@ -1,0 +1,35 @@
+{
+  "id": "youtube_video",
+  "type": "SharedSlice",
+  "name": "YoutubeVideo",
+  "description": "YoutubeVideo",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "video_id": {
+          "type": "Text",
+          "config": {
+            "label": "Video ID",
+            "placeholder": ""
+          }
+        },
+        "background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

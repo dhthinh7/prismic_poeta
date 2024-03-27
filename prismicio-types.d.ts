@@ -23,6 +23,8 @@ export type CategoryDocument<Lang extends string = string> =
   >;
 
 type CategoryPageDocumentDataSlicesSlice =
+  | YoutubeVideoSlice
+  | PageOverviewSlice
   | ServiceCardsSlice
   | TechShowcaseSlice
   | ProductShowcaseSlice
@@ -122,28 +124,6 @@ type HomePageDocumentDataSlicesSlice =
  */
 interface HomePageDocumentData {
   /**
-   * Title field in *Home Page*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: home_page.title
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.RichTextField;
-
-  /**
-   * Meta Description field in *Home Page*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: home_page.meta_description
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  meta_description: prismic.KeyTextField;
-
-  /**
    * Slice Zone field in *Home Page*
    *
    * - **Field Type**: Slice Zone
@@ -152,7 +132,27 @@ interface HomePageDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  slices: prismic.SliceZone<HomePageDocumentDataSlicesSlice>;
+  slices: prismic.SliceZone<HomePageDocumentDataSlicesSlice> /**
+   * Meta description field in *Home Page*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_page.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta title field in *Home Page*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home_page.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
 }
 
 /**
@@ -377,7 +377,27 @@ interface PageDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  slices: prismic.SliceZone<PageDocumentDataSlicesSlice>;
+  slices: prismic.SliceZone<PageDocumentDataSlicesSlice> /**
+   * Meta description field in *Page*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta title field in *Page*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
 }
 
 /**
@@ -1306,6 +1326,81 @@ type MenuItemSliceVariation = MenuItemSliceDefault | MenuItemSliceWithSubMenu;
 export type MenuItemSlice = prismic.SharedSlice<
   "menu_item",
   MenuItemSliceVariation
+>;
+
+/**
+ * Primary content in *PageOverview → Primary*
+ */
+export interface PageOverviewSliceDefaultPrimary {
+  /**
+   * Category field in *PageOverview → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_overview.primary.category
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  category: prismic.KeyTextField;
+
+  /**
+   * Title field in *PageOverview → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_overview.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Description field in *PageOverview → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_overview.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Icon field in *PageOverview → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_overview.primary.icon
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  icon: prismic.ImageField<never>;
+}
+
+/**
+ * Default variation for PageOverview Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PageOverviewSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<PageOverviewSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *PageOverview*
+ */
+type PageOverviewSliceVariation = PageOverviewSliceDefault;
+
+/**
+ * PageOverview Shared Slice
+ *
+ * - **API ID**: `page_overview`
+ * - **Description**: PageOverview
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PageOverviewSlice = prismic.SharedSlice<
+  "page_overview",
+  PageOverviewSliceVariation
 >;
 
 /**
@@ -2536,6 +2631,62 @@ export type TextContentSlice = prismic.SharedSlice<
   TextContentSliceVariation
 >;
 
+/**
+ * Primary content in *YoutubeVideo → Primary*
+ */
+export interface YoutubeVideoSliceDefaultPrimary {
+  /**
+   * Video ID field in *YoutubeVideo → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: youtube_video.primary.video_id
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  video_id: prismic.KeyTextField;
+
+  /**
+   * Background field in *YoutubeVideo → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: youtube_video.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+}
+
+/**
+ * Default variation for YoutubeVideo Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type YoutubeVideoSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<YoutubeVideoSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *YoutubeVideo*
+ */
+type YoutubeVideoSliceVariation = YoutubeVideoSliceDefault;
+
+/**
+ * YoutubeVideo Shared Slice
+ *
+ * - **API ID**: `youtube_video`
+ * - **Description**: YoutubeVideo
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type YoutubeVideoSlice = prismic.SharedSlice<
+  "youtube_video",
+  YoutubeVideoSliceVariation
+>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -2617,6 +2768,10 @@ declare module "@prismicio/client" {
       MenuItemSliceVariation,
       MenuItemSliceDefault,
       MenuItemSliceWithSubMenu,
+      PageOverviewSlice,
+      PageOverviewSliceDefaultPrimary,
+      PageOverviewSliceVariation,
+      PageOverviewSliceDefault,
       ProductShowcaseSlice,
       ProductShowcaseSliceDefaultPrimary,
       ProductShowcaseSliceDefaultItem,
@@ -2678,6 +2833,10 @@ declare module "@prismicio/client" {
       TextContentSliceDefaultItem,
       TextContentSliceVariation,
       TextContentSliceDefault,
+      YoutubeVideoSlice,
+      YoutubeVideoSliceDefaultPrimary,
+      YoutubeVideoSliceVariation,
+      YoutubeVideoSliceDefault,
     };
   }
 }

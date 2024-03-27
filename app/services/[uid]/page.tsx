@@ -1,6 +1,22 @@
 import { createClient } from '@/prismicio'
 import { components } from "@/slices";
 import { SliceZone } from "@prismicio/react";
+import { Metadata } from 'next';
+
+export async function generateMetadata({ params }: {
+  params: {
+    category: string,
+    uid: string
+  }
+}): Promise<Metadata> {
+  const client = createClient();
+  const page = await client.getByUID("category_page", params.uid);;
+
+  return {
+    title: page.data.meta_title,
+    description: page.data.meta_description,
+  };
+}
 
 export default async function Page({ params }: {
   params: {

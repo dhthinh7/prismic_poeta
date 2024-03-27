@@ -26,7 +26,7 @@ const ServiceCards = ({ slice }: ServiceCardsProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className={`py-5 ${slice.primary.background ? 'bg-primary' : ''}`}
+      className={`${slice.primary.background ? 'bg-primary' : ''}`}
     >
       <div className={`section-wrapper !px-0 ${slice.items.length < 4 ? '!max-w-[1000px]' : ''}`}>
         {slice.primary.title && <RichText field={slice.primary.title} className="text-center"/>}

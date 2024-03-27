@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { PrismicNextLink, PrismicPreview } from "@prismicio/next";
+import { PrismicPreview } from "@prismicio/next";
 import { createClient, repositoryName } from "@/prismicio";
 import '@/styles/globals.css'
-import Link from "next/link";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
-import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 

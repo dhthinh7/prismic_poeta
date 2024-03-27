@@ -1,0 +1,18 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"video_id": {
+				"__TYPE__": "FieldContent",
+				"value": "pleasant",
+				"type": "Text"
+			},
+			"background": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			}
+		},
+		"items": []
+	}
+]

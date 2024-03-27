@@ -1,15 +1,14 @@
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import { SliceZone } from "@prismicio/react";
-import { GetStaticProps, Metadata } from "next";
-import Image from "next/image";
+import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient();
   const page = await client.getSingle("home_page");
 
   return {
-    title: 'home page',
+    title: page.data.meta_title,
     description: page.data.meta_description,
   };
 }
