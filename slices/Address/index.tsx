@@ -30,7 +30,7 @@ const Address = ({ slice }: AddressProps): JSX.Element => {
             <div className="p-5">
               <h2 className="text-tittle mb-5">{slice.primary.title}</h2>
               <p className="font-bold mb-5">{slice.primary.description}</p>
-              <Button variant="solid" color="orange" className="bg-orange-600" onClick={() => alert('Show form input')}>
+              <Button variant="solid" color="orange" onClick={() => alert('Show form input')}>
                 {slice.primary.cta_button}
               </Button>
             </div>

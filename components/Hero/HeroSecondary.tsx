@@ -17,7 +17,7 @@ export default function HeroSecondary({ slice }: IHeroSecondary) {
       <RichText field={slice.primary.title} className="font-semibold text-white leading-tight text-5xl mb-8" />
       <RichText field={slice.primary.description} className="font-semibold text-white text-2xl mb-8" />
       <div className="flex gap-2 mt-4">
-        <Button className="bg-orange-600">
+        <Button >
           <PrismicNextLink field={slice.primary.primary_button_link}>
             {slice.primary.primary_button_label}
           </PrismicNextLink>

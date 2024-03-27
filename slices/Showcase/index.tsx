@@ -27,7 +27,7 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
                 <h2 className="text-tittle">{slice.primary.title}</h2>
                 <PrismicNextImage field={slice.primary.info_image} className="mt-3 mb-5"/>
                 <PrismicNextLink field={slice.primary.cta_link}>
-                  <Button className="bg-orange-500" variant="solid" color="orange">
+                  <Button variant="solid" color="orange">
                     {slice.primary.cta_label}
                   </Button>
                 </PrismicNextLink>

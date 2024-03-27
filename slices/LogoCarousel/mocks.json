@@ -36,5 +36,59 @@
 				]
 			}
 		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withTitle",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Press"
+						}
+					}
+				]
+			},
+			"background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"logo",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+								"width": 6597,
+								"height": 4398
+							},
+							"url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?rect=0%2C1078%2C6597%2C2243&w=100&h=34",
+							"width": 100,
+							"height": 34,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 1078
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			}
+		]
 	}
 ]

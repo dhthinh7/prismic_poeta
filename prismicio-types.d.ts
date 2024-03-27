@@ -4,46 +4,13 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type CategoryDocumentDataSlicesSlice =
-  | ProductShowcaseSlice
-  | ShowcaseSlice
-  | TechShowcaseSlice
-  | LogoCarouselSlice
-  | BreadcrumbSlice
-  | HeroSlice;
-
-/**
- * Content for Category documents
- */
-interface CategoryDocumentData {
-  /**
-   * Category field in *Category*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: category.category
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  category: prismic.KeyTextField;
-
-  /**
-   * Slice Zone field in *Category*
-   *
-   * - **Field Type**: Slice Zone
-   * - **Placeholder**: *None*
-   * - **API ID Path**: category.slices[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#slices
-   */
-  slices: prismic.SliceZone<CategoryDocumentDataSlicesSlice>;
-}
+interface CategoryDocumentData {}
 
 /**
  * Category document from Prismic
  *
  * - **API ID**: `category`
- * - **Repeatable**: `false`
+ * - **Repeatable**: `true`
  * - **Documentation**: https://prismic.io/docs/custom-types
  *
  * @typeParam Lang - Language API ID of the document.
@@ -52,6 +19,90 @@ export type CategoryDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<
     Simplify<CategoryDocumentData>,
     "category",
+    Lang
+  >;
+
+type CategoryPageDocumentDataSlicesSlice =
+  | ServiceCardsSlice
+  | TechShowcaseSlice
+  | ProductShowcaseSlice
+  | ShowcaseSlice
+  | TextSlice
+  | BreadcrumbSlice
+  | HeroSlice
+  | LogoCarouselSlice;
+
+/**
+ * Content for Category Page documents
+ */
+interface CategoryPageDocumentData {
+  /**
+   * Category field in *Category Page*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: category_page.category
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  category: prismic.ContentRelationshipField<"category">;
+
+  /**
+   * Slice Zone field in *Category Page*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: category_page.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<CategoryPageDocumentDataSlicesSlice> /**
+   * Meta Description field in *Category Page*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: category_page.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Category Page*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: category_page.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Category Page*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: category_page.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Category Page document from Prismic
+ *
+ * - **API ID**: `category_page`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type CategoryPageDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<CategoryPageDocumentData>,
+    "category_page",
     Lang
   >;
 
@@ -304,6 +355,8 @@ export type LayoutDocument<Lang extends string = string> =
   >;
 
 type PageDocumentDataSlicesSlice =
+  | ServiceCardsSlice
+  | TextSlice
   | TechShowcaseSlice
   | BreadcrumbSlice
   | ProductShowcaseSlice
@@ -442,6 +495,7 @@ export type SubMenuDocument<Lang extends string = string> =
 
 export type AllDocumentTypes =
   | CategoryDocument
+  | CategoryPageDocument
   | HomePageDocument
   | LayoutDocument
   | PageDocument
@@ -607,6 +661,17 @@ export type BreadcrumbSlice = prismic.SharedSlice<
  * Primary content in *Certificates → Primary*
  */
 export interface CertificatesSliceDefaultPrimary {
+  /**
+   * Background field in *Certificates → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: certificates.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+
   /**
    * Title field in *Certificates → Primary*
    *
@@ -1078,9 +1143,65 @@ export type LogoCarouselSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *LogoCarousel → Primary*
+ */
+export interface LogoCarouselSliceWithTitlePrimary {
+  /**
+   * Background field in *LogoCarousel → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: logo_carousel.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+
+  /**
+   * Title field in *LogoCarousel → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: logo_carousel.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *LogoCarousel → Items*
+ */
+export interface LogoCarouselSliceWithTitleItem {
+  /**
+   * Logo field in *LogoCarousel → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: logo_carousel.items[].logo
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo: prismic.ImageField<never>;
+}
+
+/**
+ * With title variation for LogoCarousel Slice
+ *
+ * - **API ID**: `withTitle`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type LogoCarouselSliceWithTitle = prismic.SharedSliceVariation<
+  "withTitle",
+  Simplify<LogoCarouselSliceWithTitlePrimary>,
+  Simplify<LogoCarouselSliceWithTitleItem>
+>;
+
+/**
  * Slice variation for *LogoCarousel*
  */
-type LogoCarouselSliceVariation = LogoCarouselSliceDefault;
+type LogoCarouselSliceVariation =
+  | LogoCarouselSliceDefault
+  | LogoCarouselSliceWithTitle;
 
 /**
  * LogoCarousel Shared Slice
@@ -1188,6 +1309,22 @@ export type MenuItemSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *ProductShowcase → Primary*
+ */
+export interface ProductShowcaseSliceDefaultPrimary {
+  /**
+   * Background field in *ProductShowcase → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: product_showcase.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+}
+
+/**
  * Primary content in *ProductShowcase → Items*
  */
 export interface ProductShowcaseSliceDefaultItem {
@@ -1251,14 +1388,110 @@ export interface ProductShowcaseSliceDefaultItem {
  */
 export type ProductShowcaseSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
+  Simplify<ProductShowcaseSliceDefaultPrimary>,
   Simplify<ProductShowcaseSliceDefaultItem>
+>;
+
+/**
+ * Primary content in *ProductShowcase → Primary*
+ */
+export interface ProductShowcaseSliceWithTitlePrimary {
+  /**
+   * Background field in *ProductShowcase → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: product_showcase.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+
+  /**
+   * Title field in *ProductShowcase → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *ProductShowcase → Items*
+ */
+export interface ProductShowcaseSliceWithTitleItem {
+  /**
+   * Imge field in *ProductShowcase → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.items[].imge
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  imge: prismic.ImageField<never>;
+
+  /**
+   * Name field in *ProductShowcase → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.items[].name
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  name: prismic.KeyTextField;
+
+  /**
+   * Description field in *ProductShowcase → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.items[].description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  description: prismic.KeyTextField;
+
+  /**
+   * CTA Link field in *ProductShowcase → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.items[].cta_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  cta_link: prismic.LinkField;
+
+  /**
+   * CTA Label field in *ProductShowcase → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.items[].cta_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  cta_label: prismic.KeyTextField;
+}
+
+/**
+ * With title variation for ProductShowcase Slice
+ *
+ * - **API ID**: `withTitle`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProductShowcaseSliceWithTitle = prismic.SharedSliceVariation<
+  "withTitle",
+  Simplify<ProductShowcaseSliceWithTitlePrimary>,
+  Simplify<ProductShowcaseSliceWithTitleItem>
 >;
 
 /**
  * Slice variation for *ProductShowcase*
  */
-type ProductShowcaseSliceVariation = ProductShowcaseSliceDefault;
+type ProductShowcaseSliceVariation =
+  | ProductShowcaseSliceDefault
+  | ProductShowcaseSliceWithTitle;
 
 /**
  * ProductShowcase Shared Slice
@@ -1271,6 +1504,32 @@ export type ProductShowcaseSlice = prismic.SharedSlice<
   "product_showcase",
   ProductShowcaseSliceVariation
 >;
+
+/**
+ * Primary content in *ServiceCards → Primary*
+ */
+export interface ServiceCardsSliceDefaultPrimary {
+  /**
+   * Background field in *ServiceCards → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: service_cards.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+
+  /**
+   * Title field in *ServiceCards → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: service_cards.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+}
 
 /**
  * Primary content in *ServiceCards → Items*
@@ -1326,9 +1585,35 @@ export interface ServiceCardsSliceDefaultItem {
  */
 export type ServiceCardsSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
+  Simplify<ServiceCardsSliceDefaultPrimary>,
   Simplify<ServiceCardsSliceDefaultItem>
 >;
+
+/**
+ * Primary content in *ServiceCards → Primary*
+ */
+export interface ServiceCardsSliceGridWithoutIconPrimary {
+  /**
+   * Background field in *ServiceCards → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: service_cards.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+
+  /**
+   * Title field in *ServiceCards → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: service_cards.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+}
 
 /**
  * Primary content in *ServiceCards → Items*
@@ -1364,8 +1649,92 @@ export interface ServiceCardsSliceGridWithoutIconItem {
  */
 export type ServiceCardsSliceGridWithoutIcon = prismic.SharedSliceVariation<
   "gridWithoutIcon",
-  Record<string, never>,
+  Simplify<ServiceCardsSliceGridWithoutIconPrimary>,
   Simplify<ServiceCardsSliceGridWithoutIconItem>
+>;
+
+/**
+ * Primary content in *ServiceCards → Primary*
+ */
+export interface ServiceCardsSliceGridCardBasicPrimary {
+  /**
+   * Title field in *ServiceCards → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: service_cards.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Background field in *ServiceCards → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: service_cards.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+}
+
+/**
+ * Primary content in *ServiceCards → Items*
+ */
+export interface ServiceCardsSliceGridCardBasicItem {
+  /**
+   * Title field in *ServiceCards → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: service_cards.items[].title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Description field in *ServiceCards → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: service_cards.items[].description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  description: prismic.KeyTextField;
+
+  /**
+   * Description Secondary field in *ServiceCards → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: service_cards.items[].description_secondary
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  description_secondary: prismic.KeyTextField;
+
+  /**
+   * Link field in *ServiceCards → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: service_cards.items[].link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  link: prismic.LinkField;
+}
+
+/**
+ * Grid Card Basic variation for ServiceCards Slice
+ *
+ * - **API ID**: `gridCardBasic`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ServiceCardsSliceGridCardBasic = prismic.SharedSliceVariation<
+  "gridCardBasic",
+  Simplify<ServiceCardsSliceGridCardBasicPrimary>,
+  Simplify<ServiceCardsSliceGridCardBasicItem>
 >;
 
 /**
@@ -1373,7 +1742,8 @@ export type ServiceCardsSliceGridWithoutIcon = prismic.SharedSliceVariation<
  */
 type ServiceCardsSliceVariation =
   | ServiceCardsSliceDefault
-  | ServiceCardsSliceGridWithoutIcon;
+  | ServiceCardsSliceGridWithoutIcon
+  | ServiceCardsSliceGridCardBasic;
 
 /**
  * ServiceCards Shared Slice
@@ -1827,9 +2197,54 @@ export type TechShowcaseSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *TechShowcase → Primary*
+ */
+export interface TechShowcaseSliceWithTitlePrimary {
+  /**
+   * Title field in *TechShowcase → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tech_showcase.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *TechShowcase → Items*
+ */
+export interface TechShowcaseSliceWithTitleItem {
+  /**
+   * Image field in *TechShowcase → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tech_showcase.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+}
+
+/**
+ * With title variation for TechShowcase Slice
+ *
+ * - **API ID**: `withTitle`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TechShowcaseSliceWithTitle = prismic.SharedSliceVariation<
+  "withTitle",
+  Simplify<TechShowcaseSliceWithTitlePrimary>,
+  Simplify<TechShowcaseSliceWithTitleItem>
+>;
+
+/**
  * Slice variation for *TechShowcase*
  */
-type TechShowcaseSliceVariation = TechShowcaseSliceDefault;
+type TechShowcaseSliceVariation =
+  | TechShowcaseSliceDefault
+  | TechShowcaseSliceWithTitle;
 
 /**
  * TechShowcase Shared Slice
@@ -1847,6 +2262,17 @@ export type TechShowcaseSlice = prismic.SharedSlice<
  * Primary content in *Testimonials → Primary*
  */
 export interface TestimonialsSliceDefaultPrimary {
+  /**
+   * Background field in *Testimonials → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: testimonials.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+
   /**
    * Title field in *Testimonials → Primary*
    *
@@ -1917,6 +2343,118 @@ export type TestimonialsSlice = prismic.SharedSlice<
   "testimonials",
   TestimonialsSliceVariation
 >;
+
+/**
+ * Primary content in *Text → Primary*
+ */
+export interface TextSliceDefaultPrimary {
+  /**
+   * Background field in *Text → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: text.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+
+  /**
+   * Tag field in *Text → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: text.primary.tag
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  tag: prismic.KeyTextField;
+
+  /**
+   * Text field in *Text → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: text.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  text: prismic.RichTextField;
+}
+
+/**
+ * Default variation for Text Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TextSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<TextSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Primary content in *Text → Primary*
+ */
+export interface TextSliceWithBackgroundColorPrimary {
+  /**
+   * Background field in *Text → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: text.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+
+  /**
+   * Tag field in *Text → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: text.primary.tag
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  tag: prismic.KeyTextField;
+
+  /**
+   * Text field in *Text → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: text.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  text: prismic.RichTextField;
+}
+
+/**
+ * With Background Color variation for Text Slice
+ *
+ * - **API ID**: `withBackgroundColor`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TextSliceWithBackgroundColor = prismic.SharedSliceVariation<
+  "withBackgroundColor",
+  Simplify<TextSliceWithBackgroundColorPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Text*
+ */
+type TextSliceVariation = TextSliceDefault | TextSliceWithBackgroundColor;
+
+/**
+ * Text Shared Slice
+ *
+ * - **API ID**: `text`
+ * - **Description**: Text
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TextSlice = prismic.SharedSlice<"text", TextSliceVariation>;
 
 /**
  * Primary content in *TextContent → Primary*
@@ -2010,7 +2548,9 @@ declare module "@prismicio/client" {
     export type {
       CategoryDocument,
       CategoryDocumentData,
-      CategoryDocumentDataSlicesSlice,
+      CategoryPageDocument,
+      CategoryPageDocumentData,
+      CategoryPageDocumentDataSlicesSlice,
       HomePageDocument,
       HomePageDocumentData,
       HomePageDocumentDataSlicesSlice,
@@ -2066,8 +2606,11 @@ declare module "@prismicio/client" {
       HeroSliceTertiary,
       LogoCarouselSlice,
       LogoCarouselSliceDefaultItem,
+      LogoCarouselSliceWithTitlePrimary,
+      LogoCarouselSliceWithTitleItem,
       LogoCarouselSliceVariation,
       LogoCarouselSliceDefault,
+      LogoCarouselSliceWithTitle,
       MenuItemSlice,
       MenuItemSliceDefaultPrimary,
       MenuItemSliceWithSubMenuPrimary,
@@ -2075,15 +2618,24 @@ declare module "@prismicio/client" {
       MenuItemSliceDefault,
       MenuItemSliceWithSubMenu,
       ProductShowcaseSlice,
+      ProductShowcaseSliceDefaultPrimary,
       ProductShowcaseSliceDefaultItem,
+      ProductShowcaseSliceWithTitlePrimary,
+      ProductShowcaseSliceWithTitleItem,
       ProductShowcaseSliceVariation,
       ProductShowcaseSliceDefault,
+      ProductShowcaseSliceWithTitle,
       ServiceCardsSlice,
+      ServiceCardsSliceDefaultPrimary,
       ServiceCardsSliceDefaultItem,
+      ServiceCardsSliceGridWithoutIconPrimary,
       ServiceCardsSliceGridWithoutIconItem,
+      ServiceCardsSliceGridCardBasicPrimary,
+      ServiceCardsSliceGridCardBasicItem,
       ServiceCardsSliceVariation,
       ServiceCardsSliceDefault,
       ServiceCardsSliceGridWithoutIcon,
+      ServiceCardsSliceGridCardBasic,
       ShowcaseSlice,
       ShowcaseSliceDefaultPrimary,
       ShowcaseSliceWithCategoryPrimary,
@@ -2106,12 +2658,21 @@ declare module "@prismicio/client" {
       SubMenuItemSliceWithIcon,
       TechShowcaseSlice,
       TechShowcaseSliceDefaultItem,
+      TechShowcaseSliceWithTitlePrimary,
+      TechShowcaseSliceWithTitleItem,
       TechShowcaseSliceVariation,
       TechShowcaseSliceDefault,
+      TechShowcaseSliceWithTitle,
       TestimonialsSlice,
       TestimonialsSliceDefaultPrimary,
       TestimonialsSliceVariation,
       TestimonialsSliceDefault,
+      TextSlice,
+      TextSliceDefaultPrimary,
+      TextSliceWithBackgroundColorPrimary,
+      TextSliceVariation,
+      TextSliceDefault,
+      TextSliceWithBackgroundColor,
       TextContentSlice,
       TextContentSliceDefaultPrimary,
       TextContentSliceDefaultItem,

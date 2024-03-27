@@ -2,7 +2,12 @@
 	{
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
-		"primary": {},
+		"primary": {
+			"background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
 		"items": [
 			{
 				"__TYPE__": "GroupItemContent",
@@ -64,6 +69,94 @@
 						{
 							"__TYPE__": "FieldContent",
 							"value": "action",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withTitle",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Everybody"
+						}
+					}
+				]
+			},
+			"background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"imge",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+								"width": 3456,
+								"height": 3456
+							},
+							"url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+							"width": 3456,
+							"height": 3456,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "coast",
+							"type": "Text"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "route",
+							"type": "Text"
+						}
+					],
+					[
+						"cta_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://prismic.io"
+							}
+						}
+					],
+					[
+						"cta_label",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "said",
 							"type": "Text"
 						}
 					]

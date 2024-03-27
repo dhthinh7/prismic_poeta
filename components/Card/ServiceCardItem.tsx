@@ -1,5 +1,5 @@
 import { Simplify } from '@/prismicio-types'
-import { Content } from '@prismicio/client'
+import { Content, RichTextField } from '@prismicio/client'
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next'
 import React from 'react'
 

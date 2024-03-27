@@ -7,6 +7,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "main",
 				"type": "Text"
+			},
+			"background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
 			}
 		},
 		"items": [
@@ -16,7 +20,6 @@
 					[
 						"image",
 						{
-							"__TYPE__": "ImageContent",
 							"origin": {
 								"id": "main",
 								"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
@@ -34,6 +37,9 @@
 								},
 								"background": "transparent"
 							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
 							"thumbnails": {}
 						}
 					]

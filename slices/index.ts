@@ -18,5 +18,6 @@ export const components = {
   sub_menu_item: dynamic(() => import("./SubMenuItem")),
   tech_showcase: dynamic(() => import("./TechShowcase")),
   testimonials: dynamic(() => import("./Testimonials")),
+  text: dynamic(() => import("./Text")),
   text_content: dynamic(() => import("./TextContent")),
 };

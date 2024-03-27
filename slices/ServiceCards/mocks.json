@@ -2,7 +2,23 @@
 	{
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
-		"primary": {},
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Complex"
+						}
+					}
+				]
+			},
+			"background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
 		"items": [
 			{
 				"__TYPE__": "GroupItemContent",
@@ -66,7 +82,23 @@
 	{
 		"__TYPE__": "SharedSliceContent",
 		"variation": "gridWithoutIcon",
-		"primary": {},
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Climate"
+						}
+					}
+				]
+			},
+			"background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
 		"items": [
 			{
 				"__TYPE__": "GroupItemContent",
@@ -84,6 +116,68 @@
 						{
 							"__TYPE__": "FieldContent",
 							"value": "business",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "gridCardBasic",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Attention"
+						}
+					}
+				]
+			},
+			"background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "television",
+							"type": "Text"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "buffalo",
+							"type": "Text"
+						}
+					],
+					[
+						"link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://prismic.io"
+							}
+						}
+					],
+					[
+						"description_secondary",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "alike",
 							"type": "Text"
 						}
 					]

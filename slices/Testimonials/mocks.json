@@ -22,6 +22,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "properly",
 				"type": "Text"
+			},
+			"background": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": []

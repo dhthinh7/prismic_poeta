@@ -20,7 +20,7 @@ export default function ShowcaseProductCard({item}: IShowcaseProductCard) {
         </div>
         <div className="flex justify-center">
           <PrismicNextLink field={item.cta_link}>
-            <Button className="text-orange-500 border-orange-500" variant="outline" color="orange">
+            <Button variant="outline" color="orange">
               {item.cta_label}
             </Button>
           </PrismicNextLink>

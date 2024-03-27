@@ -1,3 +1,4 @@
+import { cn } from '@/utils';
 import React from 'react'
 
 type Variant = 'solid' | 'outline';
@@ -36,7 +37,8 @@ const variantStyles = {
 };
 
 export default function Button({variant = 'solid', color='orange', className, children, ...props}: IButton) {
-  const classNames = `${baseStyles[variant] + variantStyles[variant][color]} ${className}`
+  // const classNames = `${baseStyles[variant] + variantStyles[variant][color]} ${className}`
+  const classNames = cn(baseStyles[variant], variantStyles[variant][color], className);
   return (
     <button className={classNames} {...props}>
       {children}

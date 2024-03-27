@@ -12,6 +12,15 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
         "title": {
           "type": "Text",
           "config": {

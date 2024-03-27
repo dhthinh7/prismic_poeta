@@ -1,51 +1,17 @@
 {
-  "format": "page",
+  "format": "custom",
   "id": "category",
-  "label": "Category",
-  "repeatable": false,
-  "status": true,
   "json": {
     "Main": {
       "uid": {
-        "type": "UID",
         "config": {
-          "label": "uid",
-          "placeholder": ""
-        }
-      },
-      "category": {
-        "type": "Text",
-        "config": {
-          "label": "Category",
-          "placeholder": ""
-        }
-      },
-      "slices": {
-        "type": "Slices",
-        "fieldset": "Slice Zone",
-        "config": {
-          "choices": {
-            "product_showcase": {
-              "type": "SharedSlice"
-            },
-            "showcase": {
-              "type": "SharedSlice"
-            },
-            "tech_showcase": {
-              "type": "SharedSlice"
-            },
-            "logo_carousel": {
-              "type": "SharedSlice"
-            },
-            "breadcrumb": {
-              "type": "SharedSlice"
-            },
-            "hero": {
-              "type": "SharedSlice"
-            }
-          }
-        }
+          "label": "UID"
+        },
+        "type": "UID"
       }
     }
-  }
+  },
+  "label": "Category",
+  "repeatable": true,
+  "status": true
 }

@@ -25,6 +25,47 @@
           }
         }
       }
+    },
+    {
+      "id": "withTitle",
+      "name": "With title",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2"
+          }
+        }
+      },
+      "items": {
+        "logo": {
+          "type": "Image",
+          "config": {
+            "label": "Logo",
+            "constraint": {
+              "height": 34,
+              "width": 100
+            },
+            "thumbnails": []
+          }
+        }
+      }
     }
   ]
 }
