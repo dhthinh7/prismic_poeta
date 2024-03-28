@@ -1,8 +1,8 @@
 {
-  "id": "youtube_video",
+  "id": "our_solutions",
   "type": "SharedSlice",
-  "name": "YoutubeVideo",
-  "description": "YoutubeVideo",
+  "name": "OurSolutions",
+  "description": "OurSolutions",
   "variations": [
     {
       "id": "default",
@@ -12,11 +12,13 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "video_id": {
-          "type": "Text",
+        "title": {
+          "type": "StructuredText",
           "config": {
-            "label": "Video ID",
-            "placeholder": ""
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
         "background": {
@@ -26,6 +28,14 @@
             "default_value": false,
             "placeholder_true": "true",
             "placeholder_false": "false"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
           }
         },
         "padding_top": {

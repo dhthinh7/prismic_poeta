@@ -1,4 +1,6 @@
 import TestimonialsCard from "@/components/Card/TestimonialsCard";
+import TestimonialCardDefault from "@/components/Testimonial/TestimonialCardDefault";
+import TestimonialCardWithSlice from "@/components/Testimonial/TestimonialCardWithSlice";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 
@@ -15,15 +17,11 @@ const Testimonials = ({ slice }: TestimonialsProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="bg-primary pb-5"
+      className={`${slice.primary.background ? 'bg-primary' : ''}`}
     >
       <div className="section-wrapper">
-        <div className="w-full py-3">
-          <h2 className="text-tittle mb-5 text-center">{slice.primary.title}</h2>
-          <div className="flex justify-center w-3/5 mx-auto">
-            <TestimonialsCard description={slice.primary.description} name={slice.primary.name} job_title={slice.primary.job_title} />
-          </div>
-        </div>
+        {slice.variation === 'default' && <TestimonialCardDefault slice={slice}/>}
+        {slice.variation === 'withSlice' && <TestimonialCardWithSlice slice={slice} />}
       </div>
     </section>
   );

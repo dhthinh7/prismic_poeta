@@ -22,35 +22,100 @@
           }
         },
         "title": {
-          "type": "Text",
+          "type": "StructuredText",
           "config": {
             "label": "Title",
-            "placeholder": ""
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3,heading4,heading5,heading6,paragraph"
           }
         },
         "description": {
-          "type": "Text",
+          "type": "StructuredText",
           "config": {
             "label": "Description",
-            "placeholder": ""
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3,heading4,heading5,heading6,paragraph"
           }
         },
         "name": {
-          "type": "Text",
+          "type": "StructuredText",
           "config": {
-            "label": "name",
-            "placeholder": ""
+            "label": "Name",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,em"
           }
         },
         "job_title": {
-          "type": "Text",
+          "type": "StructuredText",
           "config": {
             "label": "Job title",
-            "placeholder": ""
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,em"
           }
         }
       },
       "items": {}
+    },
+    {
+      "id": "withSlice",
+      "name": "withSlice",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading3,heading2"
+          }
+        }
+      },
+      "items": {
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6"
+          }
+        },
+        "name": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Name",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "job_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Job title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,em"
+          }
+        }
+      }
     }
   ]
 }

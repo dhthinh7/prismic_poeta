@@ -11,7 +11,17 @@
       "version": "initial",
       "description": "Default",
       "imageUrl": "",
-      "primary": {},
+      "primary": {
+        "background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
       "items": {
         "image": {
           "type": "Image",
@@ -38,6 +48,15 @@
             "placeholder": "",
             "allowTargetBlank": true,
             "multi": "heading2"
+          }
+        },
+        "background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Background",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
           }
         }
       },

@@ -5,18 +5,24 @@ import { PrismicRichText } from "@prismicio/react";
 interface IRichText {
   field: RichTextField
   className?: string
+  h1Class?: string
   h2Class?: string
   h5Class?: string
   h6Class?: string
 }
 
-export default function RichText({ field, className, h2Class, h6Class }: IRichText) {
+export default function RichText({ field, className, h1Class, h2Class, h6Class }: IRichText) {
   return (
     field && (
       <div className={className}>
         <PrismicRichText
           field={field}
           components={{
+            heading1: ({ children }) => (
+              <h2 className={cn('text-5xl font-semibold mb-9', h1Class)}>
+                {children}
+              </h2>
+            ),
             heading2: ({ children }) => (
               <h2 className={cn('text-3xl font-semibold mb-5', h2Class)}>
                 {children}
@@ -28,7 +34,7 @@ export default function RichText({ field, className, h2Class, h6Class }: IRichTe
               </h5>
             ),
             heading6: ({ children }) => (
-              <h6 className="font-semibold mb-5">
+              <h6 className={cn('font-semibold mb-5', h6Class)}>
                 {children}
               </h6>
             ),

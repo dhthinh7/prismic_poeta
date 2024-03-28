@@ -7,6 +7,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,9 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <body className={inter.className}>
         <div className="flex flex-col h-dvh">
           <Header layout={layout}/>

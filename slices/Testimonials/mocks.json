@@ -3,31 +3,125 @@
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
-			"title": {
-				"__TYPE__": "FieldContent",
-				"value": "declared",
-				"type": "Text"
-			},
-			"description": {
-				"__TYPE__": "FieldContent",
-				"value": "wolf",
-				"type": "Text"
-			},
-			"name": {
-				"__TYPE__": "FieldContent",
-				"value": "halfway",
-				"type": "Text"
-			},
-			"job_title": {
-				"__TYPE__": "FieldContent",
-				"value": "properly",
-				"type": "Text"
-			},
 			"background": {
 				"__TYPE__": "BooleanContent",
 				"value": true
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Cillum fugiat ex cillum consectetur laborum amet mollit laboris deserunt nostrud."
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Eu occaecat aliquip aliqua eu dolore sint elit consectetur. Voluptate dolore labore in excepteur Lorem fugiat mollit aute id exercitation nisi ea aute reprehenderit aliquip. Veniam consequat nostrud mollit aliqua aute aliqua voluptate pariatur."
+						}
+					}
+				]
+			},
+			"job_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Excepteur consequat ex dolor minim officia aliquip. Ullamco cupidatat consectetur elit incididunt. Esse amet est proident proident mollit officia laborum id nisi aute cupidatat minim."
+						}
+					}
+				]
+			},
+			"name": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Occaecat quis Lorem exercitation exercitation ea quis ex quis qui qui magna ullamco nulla ullamco. Consequat laboris est dolor esse."
+						}
+					}
+				]
 			}
 		},
 		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withSlice",
+		"primary": {
+			"background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Claws"
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Ex occaecat id pariatur ullamco mollit voluptate. Et excepteur nostrud magna veniam veniam."
+									}
+								}
+							]
+						}
+					],
+					[
+						"name",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Irure est proident officia sunt occaecat."
+									}
+								}
+							]
+						}
+					],
+					[
+						"job_title",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Veniam deserunt consectetur ex esse officia excepteur fugiat irure minim. Dolore laborum veniam deserunt eu proident do pariatur eiusmod amet aliqua."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
 	}
 ]

@@ -11,6 +11,7 @@ export const components = {
   hero: dynamic(() => import("./Hero")),
   logo_carousel: dynamic(() => import("./LogoCarousel")),
   menu_item: dynamic(() => import("./MenuItem")),
+  our_solutions: dynamic(() => import("./OurSolutions")),
   page_overview: dynamic(() => import("./PageOverview")),
   product_showcase: dynamic(() => import("./ProductShowcase")),
   service_cards: dynamic(() => import("./ServiceCards")),

@@ -25,6 +25,12 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "our_solutions": {
+              "type": "SharedSlice"
+            },
+            "testimonials": {
+              "type": "SharedSlice"
+            },
             "youtube_video": {
               "type": "SharedSlice"
             },

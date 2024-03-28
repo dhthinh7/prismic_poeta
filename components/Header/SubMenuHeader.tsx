@@ -22,7 +22,7 @@ export default function SubMenuHeader({slice}: ISubMenuHeader) {
   }, [getSubmenuItem])
 
 
-  return <div className="flex max-w-[1200px] mx-auto gap-14 py-7 justify-between">
+  return submenuItem && <div className="flex max-w-[1200px] mx-auto gap-14 py-7 justify-between">
     <div>
       <SliceZone slices={submenuItem?.data.slices} components={components} />
     </div>
@@ -35,5 +35,5 @@ export default function SubMenuHeader({slice}: ISubMenuHeader) {
     <div>
       <SliceZone slices={submenuItem?.data.slices3} components={components} />
     </div>
-  </div>;
+  </div>
 }

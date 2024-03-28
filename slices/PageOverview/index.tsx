@@ -1,3 +1,5 @@
+import PageOverviewDefault from "@/components/PageOverview/PageOverviewDefault";
+import SectionWrapper from "@/components/Shared/SectionWrapper";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 
@@ -14,9 +16,11 @@ const PageOverview = ({ slice }: PageOverviewProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      className="pt-10"
     >
-      Placeholder component for page_overview (variation: {slice.variation})
-      Slices
+      <SectionWrapper>
+        {slice.variation === 'default' && <PageOverviewDefault slice={slice}/>}
+      </SectionWrapper>
     </section>
   );
 };

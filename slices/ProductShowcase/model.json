@@ -20,6 +20,20 @@
             "placeholder_true": "true",
             "placeholder_false": "false"
           }
+        },
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": ""
+          }
+        },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": ""
+          }
         }
       },
       "items": {
@@ -86,6 +100,20 @@
             "placeholder": "",
             "allowTargetBlank": true,
             "multi": "heading2"
+          }
+        },
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": ""
+          }
+        },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": ""
           }
         }
       },

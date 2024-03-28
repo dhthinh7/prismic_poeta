@@ -25,7 +25,7 @@
             "label": "Title",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "heading2"
+            "multi": "heading2,heading1"
           }
         },
         "description": {
@@ -34,7 +34,7 @@
             "label": "Description",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,list-item"
+            "multi": "paragraph,heading5,heading6,list-item,o-list-item"
           }
         },
         "icon": {
