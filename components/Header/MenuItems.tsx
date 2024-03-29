@@ -16,7 +16,6 @@ export default function MenuItems({slices}: IMenuItems) {
   const ref = useRef<HTMLElement>(null)
   const handleChangeMenuItemId = useCallback((value: string) => {
     if (menuItemId === value) {
-      console.log(value, menuItemId)
       setMenuItemId('')
     } else {
       setMenuItemId(value)

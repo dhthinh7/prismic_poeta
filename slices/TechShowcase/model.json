@@ -20,6 +20,15 @@
             "placeholder_true": "true",
             "placeholder_false": "false"
           }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2"
+          }
         }
       },
       "items": {

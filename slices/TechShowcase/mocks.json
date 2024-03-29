@@ -6,6 +6,17 @@
 			"background": {
 				"__TYPE__": "BooleanContent",
 				"value": false
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Complete"
+						}
+					}
+				]
 			}
 		},
 		"items": [

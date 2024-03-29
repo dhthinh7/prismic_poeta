@@ -41,13 +41,13 @@ export default function TestimonialCardWithSlice({slice}: ITestimonialWithSlice)
           {slice.items.map((item, index) => {
             return <div key={index} className="">
               <SwiperSlide>
-              <div className="flex justify-center w-3/5 mx-auto">
-                <TestimonialsCard
-                  description={item.description}
-                  name={item.name}
-                  job_title={item.job_title}
-                />
-              </div>
+                <div className="flex justify-center w-3/5 mx-auto">
+                  <TestimonialsCard
+                    description={item.description}
+                    name={item.name}
+                    job_title={item.job_title}
+                  />
+                </div>
               </SwiperSlide>
             </div>
           })}

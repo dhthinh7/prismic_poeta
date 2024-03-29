@@ -2610,6 +2610,16 @@ export interface TechShowcaseSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
   background: prismic.BooleanField;
+
+  /**
+   * Title field in *TechShowcase → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tech_showcase.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
 }
 
 /**

@@ -10,7 +10,6 @@ interface IHeader {
 }
 
 export default async function Header({layout}: IHeader) {
-  console.log('layout.data.logo[0]?.logo_icon_link', layout.data.logo[0]?.logo_icon_link)
   return <div style={{paddingTop: 'var(--header-height)'}} className="relative">
     <div className="fixed top-0 z-10 w-full">
       <div className="bg-[#223c4db2] w-full overflow-hidden" style={{minHeight: 'var(--header-height)', height: 'var(--header-height)'}}>

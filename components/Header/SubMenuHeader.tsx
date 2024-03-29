@@ -3,6 +3,7 @@
 import { createClient } from "@/prismicio";
 import { MenuItemSlice, MenuItemSliceWithSubMenu, SubMenuDocument } from "@/prismicio-types";
 import { components } from "@/slices";
+import { isFilled } from "@prismicio/client";
 import { SliceZone } from "@prismicio/react";
 import React, { useCallback, useEffect, useState } from "react";
 
@@ -13,8 +14,10 @@ export default function SubMenuHeader({slice}: ISubMenuHeader) {
   const [submenuItem, setSubmenuItem] = useState<SubMenuDocument<string>>()
   const client = createClient()
   const getSubmenuItem = useCallback(async () => {
-    const item = await client.getByUID('sub_menu', slice.primary.sub_menu.uid)
-    setSubmenuItem(item)
+    if (isFilled.contentRelationship(slice.primary.sub_menu) && slice.primary.sub_menu.uid) {
+      const item = await client.getByUID('sub_menu', slice.primary.sub_menu.uid)
+      setSubmenuItem(item)
+    }
   }, [])
 
   useEffect(() => {

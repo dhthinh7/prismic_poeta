@@ -43,8 +43,6 @@ const LogoCarousel = ({ slice }: LogoCarouselProps): JSX.Element => {
             <Swiper
               spaceBetween={5}
               slidesPerView={6}
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log(swiper)}
               navigation={{
                 nextEl: '.tab-swiper-nav.next',
                 prevEl: '.tab-swiper-nav.prev'
