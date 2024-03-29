@@ -40,6 +40,16 @@
 				"__TYPE__": "FieldContent",
 				"value": "hay",
 				"type": "Text"
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "69",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "88",
+				"type": "Number"
 			}
 		},
 		"items": [

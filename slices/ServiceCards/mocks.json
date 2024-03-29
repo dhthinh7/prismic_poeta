@@ -17,6 +17,16 @@
 			"background": {
 				"__TYPE__": "BooleanContent",
 				"value": false
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "45",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "15",
+				"type": "Number"
 			}
 		},
 		"items": [
@@ -97,6 +107,16 @@
 			"background": {
 				"__TYPE__": "BooleanContent",
 				"value": false
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "47",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "18",
+				"type": "Number"
 			}
 		},
 		"items": [
@@ -141,6 +161,16 @@
 			"background": {
 				"__TYPE__": "BooleanContent",
 				"value": false
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "94",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "92",
+				"type": "Number"
 			}
 		},
 		"items": [

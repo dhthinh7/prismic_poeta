@@ -2,8 +2,6 @@ import React from "react";
 import { LayoutDocument } from "@/prismicio-types";
 import FooterItem from "./FooterItem";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
-import { SliceZone } from "@prismicio/react";
-import { components } from "@/slices";
 import CopyRight from "./CopyRight";
 import SocialMedias from "./SocialMedias";
 import Line from "../Shared/Line";
@@ -14,9 +12,7 @@ interface IFooter {
 
 export default function Footer({layout}: IFooter) {
 
-  // console.log('layout', layout.data)
-
-  return <section className="pb-10 bg-no-repeat bg-center bg-cover" style={{
+  return <section className="pb-10 pt-5 bg-no-repeat bg-center bg-cover" style={{
     backgroundImage: `url(https://www.poetadigital.com/hubfs/Group%20117.jpg)`
   }}>
     <div className="section-wrapper">

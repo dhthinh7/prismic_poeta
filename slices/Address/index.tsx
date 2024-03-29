@@ -22,7 +22,7 @@ const Address = ({ slice }: AddressProps): JSX.Element => {
       data-slice-variation={slice.variation}
     >
       <SliceWrapper>
-        <SectionWrapper>
+        <SectionWrapper paddingTop={slice.primary.padding_top} paddingBottom={slice.primary.padding_bottom}>
           <div className="flex items-center w-full">
             <div className="w-1/2">
               <div className="p-5">

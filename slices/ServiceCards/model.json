@@ -21,6 +21,20 @@
             "placeholder_false": "false"
           }
         },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": "Custom padding bottom (Ex: 10 => padding-bottom: 10px)"
+          }
+        },
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": "Custom padding top (Ex: 10 => padding-top: 10px)"
+          }
+        },
         "title": {
           "type": "StructuredText",
           "config": {
@@ -81,6 +95,20 @@
             "placeholder_false": "false"
           }
         },
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": "Custom padding top (Ex: 10 => padding-top: 10px)"
+          }
+        },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": "Custom padding bottom (Ex: 10 => padding-bottom: 10px)"
+          }
+        },
         "title": {
           "type": "StructuredText",
           "config": {
@@ -123,6 +151,20 @@
             "placeholder": "",
             "allowTargetBlank": true,
             "multi": "heading2"
+          }
+        },
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": "Custom padding top (Ex: 10 => padding-top: 10px)"
+          }
+        },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": "Custom padding bottom (Ex: 10 => padding-bottom: 10px)"
           }
         },
         "background": {

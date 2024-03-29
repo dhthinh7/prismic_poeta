@@ -12,6 +12,16 @@
 				"__TYPE__": "FieldContent",
 				"value": "rapidly",
 				"type": "Text"
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "86",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "43",
+				"type": "Number"
 			}
 		},
 		"items": [

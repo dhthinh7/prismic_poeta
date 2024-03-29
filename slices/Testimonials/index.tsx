@@ -1,4 +1,6 @@
 import TestimonialsCard from "@/components/Card/TestimonialsCard";
+import SectionWrapper from "@/components/Shared/SectionWrapper";
+import SliceWrapper from "@/components/Shared/SliceWrapper";
 import TestimonialCardDefault from "@/components/Testimonial/TestimonialCardDefault";
 import TestimonialCardWithSlice from "@/components/Testimonial/TestimonialCardWithSlice";
 import { Content } from "@prismicio/client";
@@ -19,10 +21,12 @@ const Testimonials = ({ slice }: TestimonialsProps): JSX.Element => {
       data-slice-variation={slice.variation}
       className={`${slice.primary.background ? 'bg-primary' : ''}`}
     >
-      <div className="section-wrapper">
-        {slice.variation === 'default' && <TestimonialCardDefault slice={slice}/>}
-        {slice.variation === 'withSlice' && <TestimonialCardWithSlice slice={slice} />}
-      </div>
+      <SliceWrapper>
+        <SectionWrapper>
+          {slice.variation === 'default' && <TestimonialCardDefault slice={slice}/>}
+          {slice.variation === 'withSlice' && <TestimonialCardWithSlice slice={slice} />}
+        </SectionWrapper>
+      </SliceWrapper>
     </section>
   );
 };

@@ -10,19 +10,9 @@ interface ISectionWrapper {
 }
 
 export default function SectionWrapper({children, className, paddingTop, paddingBottom}: ISectionWrapper) {
-  let style: CSSProperties = {}
-  if (paddingTop) {
-    style = {
-      ...style,
-      paddingTop: paddingTop + 'px',
-    }
-  }
-
-  if (paddingBottom) {
-    style = {
-      ...style,
-      paddingBottom: paddingBottom + 'px'
-    }
+  const style: CSSProperties = {
+    paddingTop: paddingTop !==undefined ? paddingTop + 'px' : '30px',
+    paddingBottom: paddingBottom !== undefined ? paddingBottom + 'px' : '30px'
   }
 
   return (

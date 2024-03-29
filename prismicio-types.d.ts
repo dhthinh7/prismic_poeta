@@ -529,6 +529,26 @@ export type AllDocumentTypes =
  */
 export interface AddressSliceDefaultPrimary {
   /**
+   * Padding top field in *Address → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding top (Ex: 10 => padding-top: 10px)
+   * - **API ID Path**: address.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *Address → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding bottom (Ex: 10 => padding-bottom: 10px)
+   * - **API ID Path**: address.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+
+  /**
    * Image field in *Address → Primary*
    *
    * - **Field Type**: Image
@@ -1507,6 +1527,16 @@ export interface ProductShowcaseSliceDefaultPrimary {
   background: prismic.BooleanField;
 
   /**
+   * Title field in *ProductShowcase → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
    * Padding top field in *ProductShowcase → Primary*
    *
    * - **Field Type**: Number
@@ -1710,11 +1740,126 @@ export type ProductShowcaseSliceWithTitle = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *ProductShowcase → Primary*
+ */
+export interface ProductShowcaseSliceFlattenPrimary {
+  /**
+   * Background field in *ProductShowcase → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: product_showcase.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+
+  /**
+   * Title field in *ProductShowcase → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Padding top field in *ProductShowcase → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *ProductShowcase → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+}
+
+/**
+ * Primary content in *ProductShowcase → Items*
+ */
+export interface ProductShowcaseSliceFlattenItem {
+  /**
+   * Imge field in *ProductShowcase → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.items[].imge
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  imge: prismic.ImageField<never>;
+
+  /**
+   * Name field in *ProductShowcase → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.items[].name
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  name: prismic.KeyTextField;
+
+  /**
+   * Description field in *ProductShowcase → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.items[].description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  description: prismic.KeyTextField;
+
+  /**
+   * CTA Link field in *ProductShowcase → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.items[].cta_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  cta_link: prismic.LinkField;
+
+  /**
+   * CTA Label field in *ProductShowcase → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.items[].cta_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  cta_label: prismic.KeyTextField;
+}
+
+/**
+ * Flatten variation for ProductShowcase Slice
+ *
+ * - **API ID**: `flatten`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProductShowcaseSliceFlatten = prismic.SharedSliceVariation<
+  "flatten",
+  Simplify<ProductShowcaseSliceFlattenPrimary>,
+  Simplify<ProductShowcaseSliceFlattenItem>
+>;
+
+/**
  * Slice variation for *ProductShowcase*
  */
 type ProductShowcaseSliceVariation =
   | ProductShowcaseSliceDefault
-  | ProductShowcaseSliceWithTitle;
+  | ProductShowcaseSliceWithTitle
+  | ProductShowcaseSliceFlatten;
 
 /**
  * ProductShowcase Shared Slice
@@ -1742,6 +1887,26 @@ export interface ServiceCardsSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
   background: prismic.BooleanField;
+
+  /**
+   * Padding bottom field in *ServiceCards → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding bottom (Ex: 10 => padding-bottom: 10px)
+   * - **API ID Path**: service_cards.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+
+  /**
+   * Padding top field in *ServiceCards → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding top (Ex: 10 => padding-top: 10px)
+   * - **API ID Path**: service_cards.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
 
   /**
    * Title field in *ServiceCards → Primary*
@@ -1828,6 +1993,26 @@ export interface ServiceCardsSliceGridWithoutIconPrimary {
   background: prismic.BooleanField;
 
   /**
+   * Padding top field in *ServiceCards → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding top (Ex: 10 => padding-top: 10px)
+   * - **API ID Path**: service_cards.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *ServiceCards → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding bottom (Ex: 10 => padding-bottom: 10px)
+   * - **API ID Path**: service_cards.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+
+  /**
    * Title field in *ServiceCards → Primary*
    *
    * - **Field Type**: Rich Text
@@ -1889,6 +2074,26 @@ export interface ServiceCardsSliceGridCardBasicPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   title: prismic.RichTextField;
+
+  /**
+   * Padding top field in *ServiceCards → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding top (Ex: 10 => padding-top: 10px)
+   * - **API ID Path**: service_cards.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *ServiceCards → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding bottom (Ex: 10 => padding-bottom: 10px)
+   * - **API ID Path**: service_cards.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
 
   /**
    * Background field in *ServiceCards → Primary*
@@ -2675,6 +2880,26 @@ export type TestimonialsSlice = prismic.SharedSlice<
  */
 export interface TextSliceDefaultPrimary {
   /**
+   * Padding top field in *Text → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding top (Ex: 10 => padding-top: 10px)
+   * - **API ID Path**: text.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *Text → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding bottom (Ex: 10 => padding-bottom: 10px)
+   * - **API ID Path**: text.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+
+  /**
    * Background field in *Text → Primary*
    *
    * - **Field Type**: Boolean
@@ -2723,6 +2948,26 @@ export type TextSliceDefault = prismic.SharedSliceVariation<
  * Primary content in *Text → Primary*
  */
 export interface TextSliceWithBackgroundColorPrimary {
+  /**
+   * Padding top field in *Text → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: text.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *Text → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: text.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+
   /**
    * Background field in *Text → Primary*
    *
@@ -2786,6 +3031,26 @@ export type TextSlice = prismic.SharedSlice<"text", TextSliceVariation>;
  * Primary content in *TextContent → Primary*
  */
 export interface TextContentSliceDefaultPrimary {
+  /**
+   * Padding top field in *TextContent → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding top (Ex: 10 => padding-top: 10px)
+   * - **API ID Path**: text_content.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *TextContent → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding bottom (Ex: 10 => padding-bottom: 10px)
+   * - **API ID Path**: text_content.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+
   /**
    * Title field in *TextContent → Primary*
    *
@@ -3032,9 +3297,12 @@ declare module "@prismicio/client" {
       ProductShowcaseSliceDefaultItem,
       ProductShowcaseSliceWithTitlePrimary,
       ProductShowcaseSliceWithTitleItem,
+      ProductShowcaseSliceFlattenPrimary,
+      ProductShowcaseSliceFlattenItem,
       ProductShowcaseSliceVariation,
       ProductShowcaseSliceDefault,
       ProductShowcaseSliceWithTitle,
+      ProductShowcaseSliceFlatten,
       ServiceCardsSlice,
       ServiceCardsSliceDefaultPrimary,
       ServiceCardsSliceDefaultItem,

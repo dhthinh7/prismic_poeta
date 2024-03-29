@@ -22,6 +22,16 @@
 			"background": {
 				"__TYPE__": "BooleanContent",
 				"value": true
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "85",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "52",
+				"type": "Number"
 			}
 		},
 		"items": []
@@ -49,6 +59,16 @@
 			"background": {
 				"__TYPE__": "BooleanContent",
 				"value": true
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "20",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "95",
+				"type": "Number"
 			}
 		},
 		"items": [
