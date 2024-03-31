@@ -20,6 +20,7 @@ export default function CarouseSlice({ slice }: ICarouseSlice) {
       const carousel = await client.getByUID('carousel', slice.primary.carousel.uid)
       setCarousel(carousel)
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {

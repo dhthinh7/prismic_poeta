@@ -1,6 +1,9 @@
 {
   "format": "custom",
   "id": "category",
+  "label": "Category",
+  "repeatable": true,
+  "status": true,
   "json": {
     "Main": {
       "uid": {
@@ -8,10 +11,14 @@
           "label": "UID"
         },
         "type": "UID"
+      },
+      "category": {
+        "type": "Text",
+        "config": {
+          "label": "Category",
+          "placeholder": ""
+        }
       }
     }
-  },
-  "label": "Category",
-  "repeatable": true,
-  "status": true
+  }
 }

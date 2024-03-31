@@ -38,7 +38,21 @@ export type CarouselDocument<Lang extends string = string> =
     Lang
   >;
 
-interface CategoryDocumentData {}
+/**
+ * Content for Category documents
+ */
+interface CategoryDocumentData {
+  /**
+   * Category field in *Category*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: category.category
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  category: prismic.KeyTextField;
+}
 
 /**
  * Category document from Prismic
