@@ -1,0 +1,19 @@
+.my-swiper-slide .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  padding: 25px 15px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-wrapper .tab-swiper-nav {
+  opacity: 0;
+  transition: all .2s ease-in;
+}
+
+.section-wrapper:hover .tab-swiper-nav {
+  opacity: 1;
+}

@@ -50,6 +50,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "88",
 				"type": "Number"
+			},
+			"background": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": [

@@ -1,0 +1,41 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"carousel": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "DocumentLink",
+					"id": "mock_document_id"
+				}
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "60",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "66",
+				"type": "Number"
+			},
+			"background": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Metal"
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

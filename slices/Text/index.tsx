@@ -1,5 +1,6 @@
 import RichText from "@/components/Shared/RichText";
 import SectionWrapper from "@/components/Shared/SectionWrapper";
+import SliceWrapper from "@/components/Shared/SliceWrapper";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 
@@ -16,14 +17,13 @@ const Text = ({ slice }: TextProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className={slice.variation === "withBackgroundColor" ? 'bg-primary' : ''}
     >
-      <SectionWrapper className="!pt-8">
-        <div>
+      <SliceWrapper background={slice.primary.background}>
+        <SectionWrapper paddingTop={slice.primary.padding_top} paddingBottom={slice.primary.padding_bottom}>
           <p>{slice.primary.tag}</p>
           <RichText field={slice.primary.text} />
-        </div>
-      </SectionWrapper>
+        </SectionWrapper>
+      </SliceWrapper>
     </section>
   );
 };

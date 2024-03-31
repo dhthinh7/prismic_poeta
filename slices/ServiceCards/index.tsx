@@ -31,7 +31,7 @@ const ServiceCards = ({ slice }: ServiceCardsProps): JSX.Element => {
       data-slice-variation={slice.variation}
     >
       <SliceWrapper background={slice.primary.background}>
-        <SectionWrapper className={`!px-0 ${slice.items.length < 4 ? '!max-w-[1000px]' : ''}`}>
+        <SectionWrapper paddingTop={slice.primary.padding_top} paddingBottom={slice.primary.padding_bottom} className={`${slice.items.length < 4 ? '!max-w-[1000px]' : ''}`}>
           {slice.primary.title && <RichText field={slice.primary.title} className="text-center"/>}
           <div className="flex items-stretch flex-wrap w-full m-auto">
             {slice.variation === 'default' && slice.items.length > 0 && slice.items.map((item, index) => {

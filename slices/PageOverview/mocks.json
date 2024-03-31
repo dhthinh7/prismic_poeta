@@ -42,13 +42,28 @@
 					}
 				]
 			},
+			"background": {
+				"__TYPE__": "FieldContent",
+				"value": "64",
+				"type": "Number"
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "80",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "10",
+				"type": "Number"
+			},
 			"description": {
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Velit ut dolore excepteur velit veniam ullamco elit officia consectetur in."
+							"text": "Eiusmod elit cupidatat eu officia ad cupidatat."
 						}
 					}
 				]

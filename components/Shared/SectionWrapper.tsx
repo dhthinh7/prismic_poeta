@@ -11,8 +11,8 @@ interface ISectionWrapper {
 
 export default function SectionWrapper({children, className, paddingTop, paddingBottom}: ISectionWrapper) {
   const style: CSSProperties = {
-    paddingTop: paddingTop !==undefined ? paddingTop + 'px' : '30px',
-    paddingBottom: paddingBottom !== undefined ? paddingBottom + 'px' : '30px'
+    paddingTop: paddingTop !==null && paddingTop !== undefined ? paddingTop + 'px' : '30px',
+    paddingBottom: paddingBottom !== null && paddingBottom !== undefined ? paddingBottom + 'px' : '30px'
   }
 
   return (

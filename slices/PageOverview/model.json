@@ -12,6 +12,27 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "background": {
+          "type": "Number",
+          "config": {
+            "label": "Background",
+            "placeholder": ""
+          }
+        },
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": ""
+          }
+        },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": ""
+          }
+        },
         "category": {
           "type": "Text",
           "config": {
@@ -28,21 +49,21 @@
             "multi": "heading2,heading1"
           }
         },
-        "description": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Description",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,heading5,heading6,list-item,o-list-item"
-          }
-        },
         "icon": {
           "type": "Image",
           "config": {
             "label": "Icon",
             "constraint": {},
             "thumbnails": []
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         }
       },

@@ -25,6 +25,12 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "certificates": {
+              "type": "SharedSlice"
+            },
+            "carousel": {
+              "type": "SharedSlice"
+            },
             "our_solutions": {
               "type": "SharedSlice"
             },
@@ -56,9 +62,6 @@
               "type": "SharedSlice"
             },
             "hero": {
-              "type": "SharedSlice"
-            },
-            "logo_carousel": {
               "type": "SharedSlice"
             }
           }

@@ -1,4 +1,5 @@
 import OurSolutionsDefault from "@/components/OurSolutions/OurSolutionsDefault";
+import OurSolutionsWithDescriptionAndGrid from "@/components/OurSolutions/OurSolutionsWithDescriptionAndGrid";
 import SectionWrapper from "@/components/Shared/SectionWrapper";
 import SliceWrapper from "@/components/Shared/SliceWrapper";
 import { Content } from "@prismicio/client";
@@ -21,6 +22,7 @@ const OurSolutions = ({ slice }: OurSolutionsProps): JSX.Element => {
       <SliceWrapper background={slice.primary.background}>
         <SectionWrapper paddingTop={slice.primary.padding_top} paddingBottom={slice.primary.padding_bottom}>
           {slice.variation === 'default' && <OurSolutionsDefault slice={slice} />}
+          {slice.variation === 'withDescriptionAndGrid' && <OurSolutionsWithDescriptionAndGrid slice={slice}/>}
         </SectionWrapper>
       </SliceWrapper>
     </section>

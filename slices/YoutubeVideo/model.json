@@ -12,13 +12,6 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "video_id": {
-          "type": "Text",
-          "config": {
-            "label": "Video ID",
-            "placeholder": ""
-          }
-        },
         "background": {
           "type": "Boolean",
           "config": {
@@ -40,6 +33,13 @@
           "config": {
             "label": "Padding bottom",
             "placeholder": "Custom padding bottom (Ex: 10 => padding-bottom: 10px)"
+          }
+        },
+        "video_id": {
+          "type": "Text",
+          "config": {
+            "label": "Video ID",
+            "placeholder": ""
           }
         }
       },

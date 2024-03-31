@@ -50,6 +50,16 @@
 						}
 					}
 				]
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "39",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "72",
+				"type": "Number"
 			}
 		},
 		"items": []
@@ -72,6 +82,16 @@
 						}
 					}
 				]
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "36",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "2",
+				"type": "Number"
 			}
 		},
 		"items": [

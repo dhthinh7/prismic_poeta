@@ -11,6 +11,16 @@
 			"background": {
 				"__TYPE__": "BooleanContent",
 				"value": false
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "44",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "4",
+				"type": "Number"
 			}
 		},
 		"items": [

@@ -18,7 +18,7 @@ const SocialMedia = ({ slice }: SocialMediaProps): JSX.Element => {
     >
       <div className="flex items-center">
         {slice.items.length > 0 && slice.items.map((item, index) => {
-          return <div key={index}>
+          return <div key={index} className="shrink-0">
             <PrismicNextLink field={item.cta_link}>
               <div className="px-5">
                 <PrismicNextImage field={item.icon} className="w-4 h-4 text-white"/>

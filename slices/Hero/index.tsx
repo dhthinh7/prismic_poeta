@@ -27,7 +27,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           <div className="h-full w-full absolute top-0 -z-10">
             <PrismicNextImage field={slice.primary.background_image} className="object-cover object-center h-full w-full"/>
           </div>
-          <div className="max-w-[1400px] mx-auto">
+          <div className="max-w-[1400px] mr-auto">
             {slice.variation === 'default' && <HeroDefault slice={slice} />}
             {slice.variation === 'secondary' && <HeroSecondary slice={slice} />}
             {slice.variation === 'tertiary' && <HeroTertiary slice={slice} />}

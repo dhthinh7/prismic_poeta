@@ -17,6 +17,16 @@
 						}
 					}
 				]
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "61",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "92",
+				"type": "Number"
 			}
 		},
 		"items": [
@@ -71,6 +81,16 @@
 			"background": {
 				"__TYPE__": "BooleanContent",
 				"value": true
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "69",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "36",
+				"type": "Number"
 			}
 		},
 		"items": [

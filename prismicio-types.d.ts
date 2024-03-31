@@ -4,6 +4,40 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
+type CarouselDocumentDataSlicesSlice = LogoCarouselSlice;
+
+/**
+ * Content for Carousel documents
+ */
+interface CarouselDocumentData {
+  /**
+   * Slice Zone field in *Carousel*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<CarouselDocumentDataSlicesSlice>;
+}
+
+/**
+ * Carousel document from Prismic
+ *
+ * - **API ID**: `carousel`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type CarouselDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<CarouselDocumentData>,
+    "carousel",
+    Lang
+  >;
+
 interface CategoryDocumentData {}
 
 /**
@@ -23,6 +57,8 @@ export type CategoryDocument<Lang extends string = string> =
   >;
 
 type CategoryPageDocumentDataSlicesSlice =
+  | CertificatesSlice
+  | CarouselSlice
   | OurSolutionsSlice
   | TestimonialsSlice
   | YoutubeVideoSlice
@@ -33,8 +69,7 @@ type CategoryPageDocumentDataSlicesSlice =
   | ShowcaseSlice
   | TextSlice
   | BreadcrumbSlice
-  | HeroSlice
-  | LogoCarouselSlice;
+  | HeroSlice;
 
 /**
  * Content for Category Page documents
@@ -111,6 +146,7 @@ export type CategoryPageDocument<Lang extends string = string> =
   >;
 
 type HomePageDocumentDataSlicesSlice =
+  | CarouselSlice
   | CertificatesSlice
   | ProductShowcaseSlice
   | ShowcaseSlice
@@ -118,7 +154,6 @@ type HomePageDocumentDataSlicesSlice =
   | AddressSlice
   | ServiceCardsSlice
   | TextContentSlice
-  | LogoCarouselSlice
   | HeroSlice;
 
 /**
@@ -357,13 +392,13 @@ export type LayoutDocument<Lang extends string = string> =
   >;
 
 type PageDocumentDataSlicesSlice =
+  | CarouselSlice
   | ServiceCardsSlice
   | TextSlice
   | TechShowcaseSlice
   | BreadcrumbSlice
   | ProductShowcaseSlice
   | ShowcaseSlice
-  | LogoCarouselSlice
   | HeroSlice;
 
 /**
@@ -516,6 +551,7 @@ export type SubMenuDocument<Lang extends string = string> =
   >;
 
 export type AllDocumentTypes =
+  | CarouselDocument
   | CategoryDocument
   | CategoryPageDocument
   | HomePageDocument
@@ -547,6 +583,17 @@ export interface AddressSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#number
    */
   padding_bottom: prismic.NumberField;
+
+  /**
+   * Background field in *Address → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: address.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
 
   /**
    * Image field in *Address → Primary*
@@ -624,6 +671,37 @@ export type AddressSlice = prismic.SharedSlice<
  */
 export interface BreadcrumbSliceDefaultPrimary {
   /**
+   * Padding top field in *Breadcrumb → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding top (Ex: 10 => padding-top: 10px)
+   * - **API ID Path**: breadcrumb.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *Breadcrumb → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding bottom (Ex: 10 => padding-bottom: 10px)
+   * - **API ID Path**: breadcrumb.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+
+  /**
+   * Background field in *Breadcrumb → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: breadcrumb.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+
+  /**
    * CTA Link field in *Breadcrumb → Primary*
    *
    * - **Field Type**: Link
@@ -700,6 +778,92 @@ export type BreadcrumbSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *Carousel → Primary*
+ */
+export interface CarouselSliceDefaultPrimary {
+  /**
+   * Padding top field in *Carousel → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding top (Ex: 10 => padding-top: 10px)
+   * - **API ID Path**: carousel.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *Carousel → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding bottom (Ex: 10 => padding-bottom: 10px)
+   * - **API ID Path**: carousel.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+
+  /**
+   * Background field in *Carousel → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: carousel.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+
+  /**
+   * Carousel field in *Carousel → Primary*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.primary.carousel
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  carousel: prismic.ContentRelationshipField<"carousel">;
+
+  /**
+   * Title field in *Carousel → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+}
+
+/**
+ * Default variation for Carousel Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CarouselSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<CarouselSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Carousel*
+ */
+type CarouselSliceVariation = CarouselSliceDefault;
+
+/**
+ * Carousel Shared Slice
+ *
+ * - **API ID**: `carousel`
+ * - **Description**: Carousel
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CarouselSlice = prismic.SharedSlice<
+  "carousel",
+  CarouselSliceVariation
+>;
+
+/**
  * Primary content in *Certificates → Primary*
  */
 export interface CertificatesSliceDefaultPrimary {
@@ -713,6 +877,26 @@ export interface CertificatesSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
   background: prismic.BooleanField;
+
+  /**
+   * Padding top field in *Certificates → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding top (Ex: 10 => padding-top: 10px)
+   * - **API ID Path**: certificates.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *Certificates → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding bottom (Ex: 10 => padding-bottom: 10px)
+   * - **API ID Path**: certificates.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
 
   /**
    * Title field in *Certificates → Primary*
@@ -1185,65 +1369,9 @@ export type LogoCarouselSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
- * Primary content in *LogoCarousel → Primary*
- */
-export interface LogoCarouselSliceWithTitlePrimary {
-  /**
-   * Background field in *LogoCarousel → Primary*
-   *
-   * - **Field Type**: Boolean
-   * - **Placeholder**: *None*
-   * - **Default Value**: false
-   * - **API ID Path**: logo_carousel.primary.background
-   * - **Documentation**: https://prismic.io/docs/field#boolean
-   */
-  background: prismic.BooleanField;
-
-  /**
-   * Title field in *LogoCarousel → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: logo_carousel.primary.title
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.RichTextField;
-}
-
-/**
- * Primary content in *LogoCarousel → Items*
- */
-export interface LogoCarouselSliceWithTitleItem {
-  /**
-   * Logo field in *LogoCarousel → Items*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: logo_carousel.items[].logo
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  logo: prismic.ImageField<never>;
-}
-
-/**
- * With title variation for LogoCarousel Slice
- *
- * - **API ID**: `withTitle`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type LogoCarouselSliceWithTitle = prismic.SharedSliceVariation<
-  "withTitle",
-  Simplify<LogoCarouselSliceWithTitlePrimary>,
-  Simplify<LogoCarouselSliceWithTitleItem>
->;
-
-/**
  * Slice variation for *LogoCarousel*
  */
-type LogoCarouselSliceVariation =
-  | LogoCarouselSliceDefault
-  | LogoCarouselSliceWithTitle;
+type LogoCarouselSliceVariation = LogoCarouselSliceDefault;
 
 /**
  * LogoCarousel Shared Slice
@@ -1365,6 +1493,26 @@ export interface OurSolutionsSliceDefaultPrimary {
   title: prismic.RichTextField;
 
   /**
+   * Padding top field in *OurSolutions → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding top (Ex: 10 => padding-top: 10px)
+   * - **API ID Path**: our_solutions.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *OurSolutions → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Custom padding bottom (Ex: 10 => padding-bottom: 10px)
+   * - **API ID Path**: our_solutions.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+
+  /**
    * Background field in *OurSolutions → Primary*
    *
    * - **Field Type**: Boolean
@@ -1384,7 +1532,25 @@ export interface OurSolutionsSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   image: prismic.ImageField<never>;
+}
 
+/**
+ * Default variation for OurSolutions Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type OurSolutionsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<OurSolutionsSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Primary content in *OurSolutions → Primary*
+ */
+export interface OurSolutionsSliceWithDescriptionAndGridPrimary {
   /**
    * Padding top field in *OurSolutions → Primary*
    *
@@ -1404,25 +1570,79 @@ export interface OurSolutionsSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#number
    */
   padding_bottom: prismic.NumberField;
+
+  /**
+   * Background field in *OurSolutions → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: our_solutions.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  background: prismic.BooleanField;
+
+  /**
+   * Title field in *OurSolutions → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: our_solutions.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Description field in *OurSolutions → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: our_solutions.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Text Right Panel field in *OurSolutions → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: our_solutions.primary.text_right_panel
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  text_right_panel: prismic.RichTextField;
+
+  /**
+   * Image field in *OurSolutions → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: our_solutions.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
 }
 
 /**
- * Default variation for OurSolutions Slice
+ * withDescriptionAndGrid variation for OurSolutions Slice
  *
- * - **API ID**: `default`
+ * - **API ID**: `withDescriptionAndGrid`
  * - **Description**: Default
  * - **Documentation**: https://prismic.io/docs/slice
  */
-export type OurSolutionsSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<OurSolutionsSliceDefaultPrimary>,
-  never
->;
+export type OurSolutionsSliceWithDescriptionAndGrid =
+  prismic.SharedSliceVariation<
+    "withDescriptionAndGrid",
+    Simplify<OurSolutionsSliceWithDescriptionAndGridPrimary>,
+    never
+  >;
 
 /**
  * Slice variation for *OurSolutions*
  */
-type OurSolutionsSliceVariation = OurSolutionsSliceDefault;
+type OurSolutionsSliceVariation =
+  | OurSolutionsSliceDefault
+  | OurSolutionsSliceWithDescriptionAndGrid;
 
 /**
  * OurSolutions Shared Slice
@@ -1440,6 +1660,36 @@ export type OurSolutionsSlice = prismic.SharedSlice<
  * Primary content in *PageOverview → Primary*
  */
 export interface PageOverviewSliceDefaultPrimary {
+  /**
+   * Background field in *PageOverview → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_overview.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  background: prismic.NumberField;
+
+  /**
+   * Padding top field in *PageOverview → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_overview.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *PageOverview → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_overview.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+
   /**
    * Category field in *PageOverview → Primary*
    *
@@ -1461,16 +1711,6 @@ export interface PageOverviewSliceDefaultPrimary {
   title: prismic.RichTextField;
 
   /**
-   * Description field in *PageOverview → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: page_overview.primary.description
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  description: prismic.RichTextField;
-
-  /**
    * Icon field in *PageOverview → Primary*
    *
    * - **Field Type**: Image
@@ -1479,6 +1719,16 @@ export interface PageOverviewSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   icon: prismic.ImageField<never>;
+
+  /**
+   * Description field in *PageOverview → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_overview.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
 }
 
 /**
@@ -1527,16 +1777,6 @@ export interface ProductShowcaseSliceDefaultPrimary {
   background: prismic.BooleanField;
 
   /**
-   * Title field in *ProductShowcase → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: product_showcase.primary.title
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.RichTextField;
-
-  /**
    * Padding top field in *ProductShowcase → Primary*
    *
    * - **Field Type**: Number
@@ -1555,6 +1795,16 @@ export interface ProductShowcaseSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#number
    */
   padding_bottom: prismic.NumberField;
+
+  /**
+   * Title field in *ProductShowcase → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
 }
 
 /**
@@ -1628,120 +1878,6 @@ export type ProductShowcaseSliceDefault = prismic.SharedSliceVariation<
 /**
  * Primary content in *ProductShowcase → Primary*
  */
-export interface ProductShowcaseSliceWithTitlePrimary {
-  /**
-   * Background field in *ProductShowcase → Primary*
-   *
-   * - **Field Type**: Boolean
-   * - **Placeholder**: *None*
-   * - **Default Value**: false
-   * - **API ID Path**: product_showcase.primary.background
-   * - **Documentation**: https://prismic.io/docs/field#boolean
-   */
-  background: prismic.BooleanField;
-
-  /**
-   * Title field in *ProductShowcase → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: product_showcase.primary.title
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.RichTextField;
-
-  /**
-   * Padding top field in *ProductShowcase → Primary*
-   *
-   * - **Field Type**: Number
-   * - **Placeholder**: *None*
-   * - **API ID Path**: product_showcase.primary.padding_top
-   * - **Documentation**: https://prismic.io/docs/field#number
-   */
-  padding_top: prismic.NumberField;
-
-  /**
-   * Padding bottom field in *ProductShowcase → Primary*
-   *
-   * - **Field Type**: Number
-   * - **Placeholder**: *None*
-   * - **API ID Path**: product_showcase.primary.padding_bottom
-   * - **Documentation**: https://prismic.io/docs/field#number
-   */
-  padding_bottom: prismic.NumberField;
-}
-
-/**
- * Primary content in *ProductShowcase → Items*
- */
-export interface ProductShowcaseSliceWithTitleItem {
-  /**
-   * Imge field in *ProductShowcase → Items*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: product_showcase.items[].imge
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  imge: prismic.ImageField<never>;
-
-  /**
-   * Name field in *ProductShowcase → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: product_showcase.items[].name
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  name: prismic.KeyTextField;
-
-  /**
-   * Description field in *ProductShowcase → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: product_showcase.items[].description
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  description: prismic.KeyTextField;
-
-  /**
-   * CTA Link field in *ProductShowcase → Items*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: product_showcase.items[].cta_link
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  cta_link: prismic.LinkField;
-
-  /**
-   * CTA Label field in *ProductShowcase → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: product_showcase.items[].cta_label
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  cta_label: prismic.KeyTextField;
-}
-
-/**
- * With title variation for ProductShowcase Slice
- *
- * - **API ID**: `withTitle`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type ProductShowcaseSliceWithTitle = prismic.SharedSliceVariation<
-  "withTitle",
-  Simplify<ProductShowcaseSliceWithTitlePrimary>,
-  Simplify<ProductShowcaseSliceWithTitleItem>
->;
-
-/**
- * Primary content in *ProductShowcase → Primary*
- */
 export interface ProductShowcaseSliceFlattenPrimary {
   /**
    * Background field in *ProductShowcase → Primary*
@@ -1755,16 +1891,6 @@ export interface ProductShowcaseSliceFlattenPrimary {
   background: prismic.BooleanField;
 
   /**
-   * Title field in *ProductShowcase → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: product_showcase.primary.title
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.RichTextField;
-
-  /**
    * Padding top field in *ProductShowcase → Primary*
    *
    * - **Field Type**: Number
@@ -1783,6 +1909,16 @@ export interface ProductShowcaseSliceFlattenPrimary {
    * - **Documentation**: https://prismic.io/docs/field#number
    */
   padding_bottom: prismic.NumberField;
+
+  /**
+   * Title field in *ProductShowcase → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: product_showcase.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
 }
 
 /**
@@ -1858,7 +1994,6 @@ export type ProductShowcaseSliceFlatten = prismic.SharedSliceVariation<
  */
 type ProductShowcaseSliceVariation =
   | ProductShowcaseSliceDefault
-  | ProductShowcaseSliceWithTitle
   | ProductShowcaseSliceFlatten;
 
 /**
@@ -2612,6 +2747,26 @@ export interface TechShowcaseSliceDefaultPrimary {
   background: prismic.BooleanField;
 
   /**
+   * Padding top field in *TechShowcase → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tech_showcase.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *TechShowcase → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tech_showcase.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+
+  /**
    * Title field in *TechShowcase → Primary*
    *
    * - **Field Type**: Rich Text
@@ -2655,16 +2810,6 @@ export type TechShowcaseSliceDefault = prismic.SharedSliceVariation<
  */
 export interface TechShowcaseSliceWithTitlePrimary {
   /**
-   * Title field in *TechShowcase → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: tech_showcase.primary.title
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.RichTextField;
-
-  /**
    * Background field in *TechShowcase → Primary*
    *
    * - **Field Type**: Boolean
@@ -2674,6 +2819,36 @@ export interface TechShowcaseSliceWithTitlePrimary {
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
   background: prismic.BooleanField;
+
+  /**
+   * Padding top field in *TechShowcase → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tech_showcase.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *TechShowcase → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tech_showcase.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
+
+  /**
+   * Title field in *TechShowcase → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: tech_showcase.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
 }
 
 /**
@@ -2737,6 +2912,26 @@ export interface TestimonialsSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
   background: prismic.BooleanField;
+
+  /**
+   * Padding top field in *Testimonials → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: testimonials.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *Testimonials → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: testimonials.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
 
   /**
    * Title field in *Testimonials → Primary*
@@ -2806,6 +3001,26 @@ export interface TestimonialsSliceWithSlicePrimary {
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
   background: prismic.BooleanField;
+
+  /**
+   * Padding top field in *Testimonials → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: testimonials.primary.padding_top
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_top: prismic.NumberField;
+
+  /**
+   * Padding bottom field in *Testimonials → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: testimonials.primary.padding_bottom
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  padding_bottom: prismic.NumberField;
 
   /**
    * Title field in *Testimonials → Primary*
@@ -3142,16 +3357,6 @@ export type TextContentSlice = prismic.SharedSlice<
  */
 export interface YoutubeVideoSliceDefaultPrimary {
   /**
-   * Video ID field in *YoutubeVideo → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: youtube_video.primary.video_id
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  video_id: prismic.KeyTextField;
-
-  /**
    * Background field in *YoutubeVideo → Primary*
    *
    * - **Field Type**: Boolean
@@ -3181,6 +3386,16 @@ export interface YoutubeVideoSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#number
    */
   padding_bottom: prismic.NumberField;
+
+  /**
+   * Video ID field in *YoutubeVideo → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: youtube_video.primary.video_id
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  video_id: prismic.KeyTextField;
 }
 
 /**
@@ -3223,6 +3438,9 @@ declare module "@prismicio/client" {
 
   namespace Content {
     export type {
+      CarouselDocument,
+      CarouselDocumentData,
+      CarouselDocumentDataSlicesSlice,
       CategoryDocument,
       CategoryDocumentData,
       CategoryPageDocument,
@@ -3259,6 +3477,10 @@ declare module "@prismicio/client" {
       BreadcrumbSliceDefaultItem,
       BreadcrumbSliceVariation,
       BreadcrumbSliceDefault,
+      CarouselSlice,
+      CarouselSliceDefaultPrimary,
+      CarouselSliceVariation,
+      CarouselSliceDefault,
       CertificatesSlice,
       CertificatesSliceDefaultPrimary,
       CertificatesSliceDefaultItem,
@@ -3283,11 +3505,8 @@ declare module "@prismicio/client" {
       HeroSliceTertiary,
       LogoCarouselSlice,
       LogoCarouselSliceDefaultItem,
-      LogoCarouselSliceWithTitlePrimary,
-      LogoCarouselSliceWithTitleItem,
       LogoCarouselSliceVariation,
       LogoCarouselSliceDefault,
-      LogoCarouselSliceWithTitle,
       MenuItemSlice,
       MenuItemSliceDefaultPrimary,
       MenuItemSliceWithSubMenuPrimary,
@@ -3296,8 +3515,10 @@ declare module "@prismicio/client" {
       MenuItemSliceWithSubMenu,
       OurSolutionsSlice,
       OurSolutionsSliceDefaultPrimary,
+      OurSolutionsSliceWithDescriptionAndGridPrimary,
       OurSolutionsSliceVariation,
       OurSolutionsSliceDefault,
+      OurSolutionsSliceWithDescriptionAndGrid,
       PageOverviewSlice,
       PageOverviewSliceDefaultPrimary,
       PageOverviewSliceVariation,
@@ -3305,13 +3526,10 @@ declare module "@prismicio/client" {
       ProductShowcaseSlice,
       ProductShowcaseSliceDefaultPrimary,
       ProductShowcaseSliceDefaultItem,
-      ProductShowcaseSliceWithTitlePrimary,
-      ProductShowcaseSliceWithTitleItem,
       ProductShowcaseSliceFlattenPrimary,
       ProductShowcaseSliceFlattenItem,
       ProductShowcaseSliceVariation,
       ProductShowcaseSliceDefault,
-      ProductShowcaseSliceWithTitle,
       ProductShowcaseSliceFlatten,
       ServiceCardsSlice,
       ServiceCardsSliceDefaultPrimary,

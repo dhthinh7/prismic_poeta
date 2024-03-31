@@ -25,18 +25,20 @@ export default function SubMenuHeader({slice}: ISubMenuHeader) {
   }, [getSubmenuItem])
 
 
-  return submenuItem && <div className="flex max-w-[1200px] mx-auto gap-14 py-7 justify-between">
-    <div>
-      <SliceZone slices={submenuItem?.data.slices} components={components} />
-    </div>
-    <div>
-      <SliceZone slices={submenuItem?.data.slices1} components={components} />
-    </div>
-    <div>
-      <SliceZone slices={submenuItem?.data.slices2} components={components} />
-    </div>
-    <div>
-      <SliceZone slices={submenuItem?.data.slices3} components={components} />
+  return submenuItem && <div className="shadow-primary-double">
+    <div className="flex max-w-[1200px] mx-auto gap-14 py-7 justify-between">
+      <div>
+        <SliceZone slices={submenuItem?.data.slices} components={components} />
+      </div>
+      <div>
+        <SliceZone slices={submenuItem?.data.slices1} components={components} />
+      </div>
+      <div>
+        <SliceZone slices={submenuItem?.data.slices2} components={components} />
+      </div>
+      <div>
+        <SliceZone slices={submenuItem?.data.slices3} components={components} />
+      </div>
     </div>
   </div>
 }

@@ -33,7 +33,7 @@ export default async function Page({ params }: {
 
 export async function generateStaticParams() {
   const client = createClient()
-  const pages = await client.getAllByType('category_page')
+  const pages = await client.getAllByUIDs('category_page', ['services'])
 
   return pages.map((page) => {
     return {

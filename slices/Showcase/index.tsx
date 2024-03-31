@@ -1,4 +1,6 @@
 import Button from "@/components/Shared/Button";
+import SectionWrapper from "@/components/Shared/SectionWrapper";
+import SliceWrapper from "@/components/Shared/SliceWrapper";
 import { Content } from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { SliceComponentProps } from "@prismicio/react";
@@ -18,8 +20,8 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
       data-slice-variation={slice.variation}
       className="py-5"
     >
-      <div className="section-wrapper">
-        <div className="w-full py-3">
+      <SliceWrapper>
+        <SectionWrapper>
           <div className="flex items-center">
             <div className="w-1/2">
               <div>
@@ -37,8 +39,8 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
               <PrismicNextImage field={slice.primary.image} />
             </div>
           </div>
-        </div>
-      </div>
+        </SectionWrapper>
+      </SliceWrapper>
     </section>
   );
 };

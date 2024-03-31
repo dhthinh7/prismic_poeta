@@ -11,6 +11,9 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "carousel": {
+              "type": "SharedSlice"
+            },
             "certificates": {
               "type": "SharedSlice"
             },
@@ -30,9 +33,6 @@
               "type": "SharedSlice"
             },
             "text_content": {
-              "type": "SharedSlice"
-            },
-            "logo_carousel": {
               "type": "SharedSlice"
             },
             "hero": {
