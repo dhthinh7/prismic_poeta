@@ -18,7 +18,8 @@ export default function SubMenuHeader({slice}: ISubMenuHeader) {
       const item = await client.getByUID('sub_menu', slice.primary.sub_menu.uid)
       setSubmenuItem(item)
     }
-  }, [client, slice.primary.sub_menu])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   useEffect(() => {
     getSubmenuItem()

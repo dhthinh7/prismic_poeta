@@ -160,6 +160,7 @@ export type CategoryPageDocument<Lang extends string = string> =
   >;
 
 type HomePageDocumentDataSlicesSlice =
+  | LogoCarouselSlice
   | CarouselSlice
   | CertificatesSlice
   | ProductShowcaseSlice
