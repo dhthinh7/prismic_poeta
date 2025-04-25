@@ -1,0 +1,40 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Our Vision",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "To create best-in-class software solutions and systems that solve real-world challenges, fostering innovation, and contributing to a better world.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "#C3D4F133"
+			}
+		},
+		"items": []
+	}
+]

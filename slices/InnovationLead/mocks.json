@@ -1,0 +1,309 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Code Masters, Innovation Leaders.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "When it comes to custom software development and systems enablement, we create source code in the form of poetry. Poeta only employs artists in software solutions whose mastery in coding is matched by an innate determination to help people worldwide.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"leaders": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"leader_image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
+										"width": 3500,
+										"height": 2338
+									},
+									"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
+									"width": 3500,
+									"height": 2338,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"name",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Tom Muir",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"job_title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "CTO Title",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"button_label",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Learn More"
+								}
+							],
+							[
+								"button_variant",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "outline",
+									"type": "Select"
+								}
+							],
+							[
+								"leader_detail",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "DocumentLink",
+										"id": "mock_document_id"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"leader_image",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDIyODUwMzB8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced fruit on white surface",
+									"origin": {
+										"id": "YSA1IRkGAsg",
+										"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDIyODUwMzB8MA&ixlib=rb-4.0.3&q=85",
+										"width": 5760,
+										"height": 3840
+									},
+									"width": 5760,
+									"height": 3840,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"name",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Tom Muir",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"job_title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "CTO Title",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"button_label",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Learn More"
+								}
+							],
+							[
+								"button_variant",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "outline",
+									"type": "Select"
+								}
+							],
+							[
+								"leader_detail",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "DocumentLink",
+										"id": "mock_document_id"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Tom Muir",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"job_title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "CTO Title",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"button_label",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Learn More"
+								}
+							],
+							[
+								"leader_image",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQyMjg1MDMwfDA&ixlib=rb-4.0.3&q=85",
+									"alt": "orange fruits on blue ceramic bowl",
+									"origin": {
+										"id": "-QOUBSKHvAM",
+										"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQyMjg1MDMwfDA&ixlib=rb-4.0.3&q=85",
+										"width": 4960,
+										"height": 3594
+									},
+									"width": 4960,
+									"height": 3594,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"button_variant",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "outline",
+									"type": "Select"
+								}
+							],
+							[
+								"leader_detail",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "DocumentLink",
+										"id": "mock_document_id"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

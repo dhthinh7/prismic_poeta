@@ -5,34 +5,8 @@
   "description": "MenuItem",
   "variations": [
     {
-      "id": "default",
-      "name": "Default",
-      "docURL": "...",
-      "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
-      "primary": {
-        "label": {
-          "type": "Text",
-          "config": {
-            "label": "Label",
-            "placeholder": ""
-          }
-        },
-        "link": {
-          "type": "Link",
-          "config": {
-            "label": "Link",
-            "placeholder": "",
-            "select": null
-          }
-        }
-      },
-      "items": {}
-    },
-    {
       "id": "withSubMenu",
-      "name": "With sub menu",
+      "name": "default",
       "docURL": "...",
       "version": "initial",
       "description": "Default",
@@ -42,7 +16,7 @@
           "type": "Text",
           "config": {
             "label": "Label",
-            "placeholder": ""
+            "placeholder": "Label"
           }
         },
         "sub_menu": {
@@ -53,6 +27,16 @@
             "customtypes": [
               "sub_menu"
             ]
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "Link",
+            "allowTargetBlank": true,
+            "select": null,
+            "allowText": true
           }
         }
       },

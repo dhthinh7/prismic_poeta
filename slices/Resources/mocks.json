@@ -1,0 +1,89 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Browse Our free Library",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Browse our free library of resources organized by industry and the solutions we offer to provide valuable insights into a variety of different topics including case studies, whitepapers and blogs on topics about...",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "blog",
+		"primary": {
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "33",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "69",
+				"type": "Number"
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#C3D4F119",
+				"type": "Select"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Amet consequat laboris quis magna sit. Excepteur eu laboris cupidatat id aliquip qui quis fugiat fugiat. Consequat in occaecat ipsum consectetur duis deserunt mollit quis."
+						}
+					}
+				]
+			},
+			"title_position": {
+				"__TYPE__": "FieldContent",
+				"value": "Center",
+				"type": "Select"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ipsum est consequat nostrud fugiat reprehenderit exercitation dolore aliquip. Adipisicing est deserunt aliquip commodo enim elit commodo cupidatat. Aliqua mollit quis deserunt."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

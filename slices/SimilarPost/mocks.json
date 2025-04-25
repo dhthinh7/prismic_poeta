@@ -1,0 +1,14 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "35",
+				"type": "Number"
+			}
+		},
+		"items": []
+	}
+]

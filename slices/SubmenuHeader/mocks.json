@@ -1,0 +1,22 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"sub_menu_header_label": {
+				"__TYPE__": "FieldContent",
+				"value": "palace",
+				"type": "Text"
+			},
+			"sub_menu_header_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev",
+					"text": "break"
+				}
+			}
+		},
+		"items": []
+	}
+]

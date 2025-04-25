@@ -6,39 +6,119 @@
   "status": true,
   "json": {
     "Main": {
+      "display_name": {
+        "type": "Text",
+        "config": {
+          "label": "Display Name",
+          "placeholder": ""
+        }
+      },
+      "level_one": {
+        "type": "Link",
+        "config": {
+          "label": "Parent Category",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "select": null,
+          "allowText": true
+        }
+      },
+      "level_two": {
+        "type": "Link",
+        "config": {
+          "label": "First Child Category",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "select": null,
+          "allowText": true
+        }
+      },
+      "level_three": {
+        "type": "Link",
+        "config": {
+          "label": "Second Child Category",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "select": null,
+          "allowText": true
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": "Search result showing"
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "logo_carousel": {
+            "resources": {
+              "type": "SharedSlice"
+            },
+            "innovation_lead": {
+              "type": "SharedSlice"
+            },
+            "contact_us_form": {
+              "type": "SharedSlice"
+            },
+            "talk_to_expert_form": {
               "type": "SharedSlice"
             },
             "carousel": {
               "type": "SharedSlice"
             },
-            "certificates": {
+            "carousel_util": {
               "type": "SharedSlice"
             },
-            "product_showcase": {
+            "industries_served": {
               "type": "SharedSlice"
             },
-            "showcase": {
+            "development_approach": {
+              "type": "SharedSlice"
+            },
+            "text_with_image": {
+              "type": "SharedSlice"
+            },
+            "careers": {
+              "type": "SharedSlice"
+            },
+            "our_vision": {
               "type": "SharedSlice"
             },
             "testimonials": {
               "type": "SharedSlice"
             },
-            "address": {
+            "video_block": {
               "type": "SharedSlice"
             },
-            "service_cards": {
+            "we_are_here": {
               "type": "SharedSlice"
             },
-            "text_content": {
+            "showcase": {
               "type": "SharedSlice"
             },
-            "hero": {
+            "certificate": {
+              "type": "SharedSlice"
+            },
+            "case_study": {
+              "type": "SharedSlice"
+            },
+            "single_heading": {
+              "type": "SharedSlice"
+            },
+            "image_slice": {
+              "type": "SharedSlice"
+            },
+            "grid_card": {
+              "type": "SharedSlice"
+            },
+            "breadcrumb": {
+              "type": "SharedSlice"
+            },
+            "banner": {
               "type": "SharedSlice"
             }
           }

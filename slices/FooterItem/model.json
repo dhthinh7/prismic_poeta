@@ -16,7 +16,20 @@
           "type": "Text",
           "config": {
             "label": "Title",
-            "placeholder": ""
+            "placeholder": "Title"
+          }
+        },
+        "title_position": {
+          "type": "Select",
+          "config": {
+            "label": "Title Position",
+            "placeholder": "",
+            "options": [
+              "Left",
+              "Right",
+              "Center"
+            ],
+            "default_value": "Left"
           }
         }
       },

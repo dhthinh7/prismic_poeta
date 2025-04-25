@@ -67,11 +67,35 @@
           "placeholder": ""
         }
       },
+      "address_indicator": {
+        "type": "Image",
+        "config": {
+          "label": "Address Indicator",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "phone_number": {
         "type": "Text",
         "config": {
           "label": "Phone number",
           "placeholder": ""
+        }
+      },
+      "cover_image": {
+        "type": "Image",
+        "config": {
+          "label": "Cover Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "phone_indicator": {
+        "type": "Image",
+        "config": {
+          "label": "Phone Indicator",
+          "constraint": {},
+          "thumbnails": []
         }
       },
       "email": {
@@ -81,35 +105,20 @@
           "placeholder": ""
         }
       },
+      "email_indicator": {
+        "type": "Image",
+        "config": {
+          "label": "Email Indicator",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "social_media": {
         "type": "Link",
         "config": {
           "label": "Social Media",
           "select": "document",
           "customtypes": ["social_media"]
-        }
-      },
-      "copy_right": {
-        "type": "Group",
-        "config": {
-          "label": "Copy Right",
-          "repeat": true,
-          "fields": {
-            "primary_text": {
-              "type": "Text",
-              "config": {
-                "label": "Primary text",
-                "placeholder": ""
-              }
-            },
-            "secondary_text": {
-              "type": "Text",
-              "config": {
-                "label": "Secondary text",
-                "placeholder": ""
-              }
-            }
-          }
         }
       },
       "slices1": {

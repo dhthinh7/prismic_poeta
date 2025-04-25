@@ -1,39 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# POETA WEBSITE + PRISMIC
 
-## Getting Started
+## Requirement
 
-First, run the development server:
+- [Node.js 18.19.0](https://nodejs.org/en/)
+- [Nextjs 14.2.4](https://nextjs.org/docs)
+- [Prismic](https://prismic.io/)
+- [TailwindCss 3.4.14](https://v3.tailwindcss.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## For Development
+
+```shell
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create `.env` in local
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+NEXT_PUBLIC_API_ENDPOINT=
+NEXT_PUBLIC_PRISMIC_REF=
+NEXT_PUBLIC_GOOGLE_SERVICE_ACCOUNT_EMAIL=
+NEXT_PUBLIC_GOOGLE_PRIVATE_KEY=
+NEXT_PUBLIC_TALK_TO_EXPERT_GOOGLE_SHEET_ID=
+NEXT_PUBLIC_MAIL_SERVER=
+NEXT_PUBLIC_MAIL_SERVER_NAME=
+NEXT_PUBLIC_MAIL_SERVER_PASSWORD=
+NEXT_PUBLIC_RECAPTCHA_SITE_KEY=
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Run hot-reload for development
 
-## Learn More
+```shell
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start slice machine to define template and models
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```shell
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-
-## 
+npm run slicemachine
+```

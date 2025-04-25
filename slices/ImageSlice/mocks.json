@@ -1,0 +1,88 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"background": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1582789760972-c8916cebe649?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQwOTI3NzgwfDA&ixlib=rb-4.0.3&q=85",
+				"alt": "orange fruit in water with water",
+				"origin": {
+					"id": "uYM_PQJ8VvY",
+					"url": "https://images.unsplash.com/photo-1582789760972-c8916cebe649?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQwOTI3NzgwfDA&ixlib=rb-4.0.3&q=85",
+					"width": 4380,
+					"height": 2901
+				},
+				"width": 4380,
+				"height": 2901,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Image Block",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Image Block Des",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title_position": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Center"
+			},
+			"caption": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Enim ullamco nulla anim aliquip anim eu nostrud aliquip ad reprehenderit fugiat tempor exercitation. Est veniam exercitation nostrud nisi id sunt aliquip minim quis ullamco culpa elit."
+						}
+					}
+				]
+			},
+			"link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io",
+					"text": "clothes"
+				}
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#C3D4F119",
+				"type": "Select"
+			}
+		},
+		"items": []
+	}
+]

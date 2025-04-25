@@ -12,11 +12,21 @@
         },
         "type": "UID"
       },
-      "category": {
+      "category_name": {
         "type": "Text",
         "config": {
-          "label": "Category",
+          "label": "Category Name",
           "placeholder": ""
+        }
+      },
+      "category_link": {
+        "type": "Link",
+        "config": {
+          "label": "Category Link",
+          "placeholder": "Link to specific page",
+          "allowTargetBlank": true,
+          "select": null,
+          "allowText": true
         }
       }
     }

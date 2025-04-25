@@ -1,0 +1,311 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Exceptional Expertise In These Industries",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDE5MTQ2NTl8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced fruit on white surface",
+									"origin": {
+										"id": "YSA1IRkGAsg",
+										"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDE5MTQ2NTl8MA&ixlib=rb-4.0.3&q=85",
+										"width": 5760,
+										"height": 3840
+									},
+									"width": 5760,
+									"height": 3840,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io",
+										"text": "Manufacturing"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1592187270271-9a4b84faa228?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDE5MTQ2NTl8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced orange fruit on blue surface",
+									"origin": {
+										"id": "8ZGgg6rhzxs",
+										"url": "https://images.unsplash.com/photo-1592187270271-9a4b84faa228?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDE5MTQ2NTl8MA&ixlib=rb-4.0.3&q=85",
+										"width": 4000,
+										"height": 6000
+									},
+									"width": 4000,
+									"height": 6000,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "AnyLink",
+										"text": "Hospitality"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1616679312958-a86d9539afae?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDE5MTQ2NTl8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "orange fruit on white ceramic plate",
+									"origin": {
+										"id": "Jr7t5QviCDM",
+										"url": "https://images.unsplash.com/photo-1616679312958-a86d9539afae?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDE5MTQ2NTl8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3024,
+										"height": 4032
+									},
+									"width": 3024,
+									"height": 4032,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "AnyLink",
+										"text": "Hospitality"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDE5MTQ2NTl8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced fruit on white surface",
+									"origin": {
+										"id": "YSA1IRkGAsg",
+										"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDE5MTQ2NTl8MA&ixlib=rb-4.0.3&q=85",
+										"width": 5760,
+										"height": 3840
+									},
+									"width": 5760,
+									"height": 3840,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "AnyLink",
+										"text": "Hospitality"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "AnyLink",
+										"text": "Hospitality"
+									}
+								}
+							],
+							[
+								"icon",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1596460666242-bdcf1bb8eca1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxOTE0NjU5fDA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced orange fruit on brown wooden table",
+									"origin": {
+										"id": "K9W_8z2zIVo",
+										"url": "https://images.unsplash.com/photo-1596460666242-bdcf1bb8eca1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxOTE0NjU5fDA&ixlib=rb-4.0.3&q=85",
+										"width": 3224,
+										"height": 4843
+									},
+									"width": 3224,
+									"height": 4843,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"__TYPE__": "ImageContent",
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxOTE0NjU5fDA&ixlib=rb-4.0.3&q=85",
+									"alt": "yellow lemon fruit on white surface",
+									"origin": {
+										"id": "7WAGthfGJ9w",
+										"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxOTE0NjU5fDA&ixlib=rb-4.0.3&q=85",
+										"width": 5460,
+										"height": 3640
+									},
+									"width": 5460,
+									"height": 3640,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"thumbnails": {}
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "AnyLink",
+										"text": "Hospitality"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": []
+					}
+				]
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Browse our Solutions"
+			},
+			"button_type": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Link"
+			},
+			"background": {
+				"__TYPE__": "ImageContent",
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxOTE0NjU5fDA&ixlib=rb-4.0.3&q=85",
+				"alt": "orange fruits under blue sky during daytime",
+				"origin": {
+					"id": "eaOjEz8746k",
+					"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxOTE0NjU5fDA&ixlib=rb-4.0.3&q=85",
+					"width": 5688,
+					"height": 3792
+				},
+				"width": 5688,
+				"height": 3792,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"thumbnails": {}
+			}
+		},
+		"items": []
+	}
+]

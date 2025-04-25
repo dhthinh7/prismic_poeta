@@ -1,0 +1,525 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "We’re the experts who fill in technical gaps on any team, whether it’s software development, systems optimization, or automation to get businesses back on track.\n\nSince 2008, we’ve created 300+ custom software applications across five continents for numerous established companies like Microsoft, Sony, Okta, Hyperproof, Attabotics, and Paysafe, as well as many up-and-coming start-ups. \n\nHeadquartered in Calgary, Alberta, our strategically positioned international hubs in Canada, Vietnam, and Australia foster creativity, innovation, and collaboration on a global scale. By tapping into diverse talents and regional trends, we continue to deliver solutions to our clients based on the latest developments and trends while built to North American standards. Our distributed team allows us to develop and provide our clients with the round-the-clock support they deserve.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+					"width": 5616,
+					"height": 3744
+				},
+				"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+				"width": 5616,
+				"height": 3744,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"image_position": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Right"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Our Team",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"sub_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Your Dream Team In Tech",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"short_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "We’re the experts who fill in technical gaps on any team, whether it’s software development, systems optimization, or automation to get businesses back on track.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"full_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "We’re the experts who fill in technical gaps on any team, whether it’s software development, systems optimization, or automation to get businesses back on track.\n\nSince 2008, we’ve created 300+ custom software applications across five continents for numerous established companies like Microsoft, Sony, Okta, Hyperproof, Attabotics, and Paysafe, as well as many up-and-coming start-ups. \n\nHeadquartered in Calgary, Alberta, our strategically positioned international hubs in Canada, Vietnam, and Australia foster creativity, innovation, and collaboration on a global scale. By tapping into diverse talents and regional trends, we continue to deliver solutions to our clients based on the latest developments and trends while built to North American standards. Our distributed team allows us to develop and provide our clients with the round-the-clock support they deserve.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "textWithImageButton",
+		"primary": {
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "55",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "87",
+				"type": "Number"
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "transparent",
+				"type": "Select"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "About Us",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"sub_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Master Coders, Innovation Leaders",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"short_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "When it comes to software development and systems enablement, we create source code in the form of poetry. Poeta only employs artists in software solutions whose mastery in coding is matched by an innate determination to help people worldwide.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"full_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "When it comes to software development and systems enablement, we create source code in the form of poetry. Poeta only employs artists in software solutions whose mastery in coding is matched by an innate determination to help people worldwide.",
+							"spans": [
+								{
+									"type": "label",
+									"start": 8,
+									"end": 14,
+									"data": "HIGH_LIGHT"
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"image": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDE4MTY1NDF8MA&ixlib=rb-4.0.3&q=85",
+				"alt": "sliced orange fruit on white surface",
+				"origin": {
+					"id": "92HwFhCp-MQ",
+					"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDE4MTY1NDF8MA&ixlib=rb-4.0.3&q=85",
+					"width": 3699,
+					"height": 2959
+				},
+				"width": 3699,
+				"height": 2959,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"image_position": {
+				"__TYPE__": "FieldContent",
+				"value": "Right",
+				"type": "Select"
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Meet Our Team"
+			},
+			"button_type": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Link"
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://docs.google.com/document/d/1XsU-XQkY1FbS_1ddIWEFt8FOlZp2K8dh2tNQsanyWnc/edit?pli=1&tab=t.0",
+					"target": "_blank"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "textWithImageButtonSecondary",
+		"primary": {
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "70",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "81",
+				"type": "Number"
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#C3D4F119",
+				"type": "Select"
+			},
+			"full_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Cupidatat fugiat laboris proident nulla cillum. Aliquip exercitation fugiat deserunt labore enim consectetur anim eu."
+						}
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+					"width": 5243,
+					"height": 3495
+				},
+				"url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+				"width": 5243,
+				"height": 3495,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"image_position": {
+				"__TYPE__": "FieldContent",
+				"value": "Right",
+				"type": "Select"
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "ourselves",
+				"type": "Text"
+			},
+			"button_type": {
+				"__TYPE__": "FieldContent",
+				"value": "Link",
+				"type": "Select"
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com",
+					"text": "character"
+				}
+			},
+			"form_selection": {
+				"__TYPE__": "FieldContent",
+				"value": "CONTACT US FORM",
+				"type": "Select"
+			},
+			"button_variant": {
+				"__TYPE__": "FieldContent",
+				"value": "solid",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "text",
+		"primary": {
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "93",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "96",
+				"type": "Number"
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "transparent",
+				"type": "Select"
+			},
+			"sub_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Eu ad velit occaecat eiusmod exercitation culpa."
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "The Problem",
+							"spans": [
+								{
+									"type": "label",
+									"start": 0,
+									"end": 11,
+									"data": "HIGH_LIGHT_ORANGE_RED"
+								},
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 11
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "heading1",
+						"content": {
+							"text": "\nThe Solution",
+							"spans": [
+								{
+									"type": "label",
+									"start": 1,
+									"end": 13,
+									"data": "HIGH_LIGHT_ORANGE_YELLOW"
+								},
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 13
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "heading1",
+						"content": {
+							"text": "\nThe Result",
+							"spans": [
+								{
+									"type": "label",
+									"start": 1,
+									"end": 11,
+									"data": "HIGH_LIGHT_TEAL_GREEN"
+								},
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 11
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "SUBHEADING",
+							"spans": [
+								{
+									"type": "label",
+									"start": 0,
+									"end": 10,
+									"data": "SUBHEADING"
+								},
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 10
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Header",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 6
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 6
+								},
+								{
+									"type": "strong",
+									"start": 408,
+									"end": 416
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

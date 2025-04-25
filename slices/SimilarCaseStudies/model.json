@@ -1,0 +1,55 @@
+{
+  "id": "similar_case_studies",
+  "type": "SharedSlice",
+  "name": "SimilarCaseStudies",
+  "description": "SimilarCaseStudies",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": ""
+          }
+        },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": ""
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "#FFFFFF",
+              "#EDF3FB",
+              "#EEEEEE",
+              "#425B76"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

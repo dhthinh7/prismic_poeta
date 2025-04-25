@@ -1,0 +1,36 @@
+{
+  "id": "submenu_header",
+  "type": "SharedSlice",
+  "name": "SubmenuHeader",
+  "description": "SubmenuHeader",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "sub_menu_header_label": {
+          "type": "Text",
+          "config": {
+            "label": "Sub Menu Header Label",
+            "placeholder": ""
+          }
+        },
+        "sub_menu_header_link": {
+          "type": "Link",
+          "config": {
+            "label": "Sub Menu Header Link",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "select": null,
+            "allowText": true
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -12,98 +12,138 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": ""
+          }
+        },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": ""
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "#FFFFFF",
+              "#EDF3FB",
+              "#EEEEEE",
+              "#425B76"
+            ]
+          }
+        },
         "title": {
-          "type": "Text",
+          "type": "StructuredText",
           "config": {
             "label": "Title",
-            "placeholder": ""
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
           }
         },
-        "cta_label": {
+        "right_image": {
+          "type": "Image",
+          "config": {
+            "label": "Right Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "right_image_label": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Right Image Label",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "button_label": {
           "type": "Text",
           "config": {
-            "label": "CTA Label",
-            "placeholder": ""
+            "label": "Button Label",
+            "placeholder": "Input the button label"
           }
         },
-        "cta_link": {
+        "button_type": {
+          "type": "Select",
+          "config": {
+            "label": "Button Type",
+            "placeholder": "Select type for button action",
+            "options": [
+              "Link",
+              "Form Modal"
+            ]
+          }
+        },
+        "button_link": {
           "type": "Link",
           "config": {
-            "label": "CTA Link",
-            "placeholder": "",
-            "select": null
+            "label": "Button Link",
+            "placeholder": "Input link if type is 'Link'",
+            "allowTargetBlank": true,
+            "select": null,
+            "allowText": true
           }
         },
-        "image": {
-          "type": "Image",
+        "form_selection": {
+          "type": "Select",
           "config": {
-            "label": "Image",
-            "constraint": {},
-            "thumbnails": []
+            "label": "Form Selection",
+            "placeholder": "Select form if type is 'Form Modal'",
+            "options": [
+              "TALK TO EXPERT FORM",
+              "CONTACT US FORM"
+            ]
           }
         },
-        "info_image": {
-          "type": "Image",
+        "counter_up": {
+          "type": "Group",
           "config": {
-            "label": "Info image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        }
-      },
-      "items": {}
-    },
-    {
-      "id": "withCategory",
-      "name": "With Category",
-      "docURL": "...",
-      "version": "initial",
-      "description": "Default",
-      "imageUrl": "",
-      "primary": {
-        "title": {
-          "type": "Text",
-          "config": {
-            "label": "Title",
-            "placeholder": ""
-          }
-        },
-        "cta_label": {
-          "type": "Text",
-          "config": {
-            "label": "CTA Label",
-            "placeholder": ""
-          }
-        },
-        "cta_link": {
-          "type": "Link",
-          "config": {
-            "label": "CTA Link",
-            "placeholder": "",
-            "select": null
-          }
-        },
-        "image": {
-          "type": "Image",
-          "config": {
-            "label": "Image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "info_image": {
-          "type": "Image",
-          "config": {
-            "label": "Info image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "category": {
-          "type": "Text",
-          "config": {
-            "label": "Category",
-            "placeholder": ""
+            "label": "Counter Up",
+            "repeat": true,
+            "fields": {
+              "icon": {
+                "type": "Image",
+                "config": {
+                  "label": "Icon",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "counter_number": {
+                "type": "Number",
+                "config": {
+                  "label": "Counter Number",
+                  "placeholder": ""
+                }
+              },
+              "label": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Label",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph"
+                }
+              },
+              "is_counter_up_plus": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Is Counter Up Plus",
+                  "placeholder_false": "false",
+                  "placeholder_true": "true",
+                  "default_value": false
+                }
+              }
+            }
           }
         }
       },

@@ -3,19 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --header-height: 76px;
-}
-
-body {
-  font-family: 'Helvetica, Arial, sans-serif'
+  --header-height: 80px;
 }
 
 @layer base {
   html {
     @apply h-full scroll-smooth antialiased;
   }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   body {
     @apply flex h-full flex-col;
+    font-family: var(--font-sourceCodePro);
+    overflow-x: hidden;
+  }
+
+  input:-webkit-autofill {
+    background-color: transparent !important;
   }
 
   main {
@@ -28,6 +36,15 @@ body {
 
   .section {
     @apply py-20;
+  }
+  :root {
+    --radius: 0.5rem;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -45,4 +62,13 @@ body {
   color: #231f20;
   font-size: 32px;
   text-transform: none;
+}
+
+.my-swiper-slide.single-column .swiper-slide {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.my-swiper-slide.single-column .swiper-wrapper {
+  align-items: flex-end;
 }

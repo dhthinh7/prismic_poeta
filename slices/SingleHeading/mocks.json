@@ -1,0 +1,27 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Check out some of our other industry leading services",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "#EDF3FB"
+			}
+		},
+		"items": []
+	}
+]

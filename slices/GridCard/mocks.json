@@ -1,0 +1,2065 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"sub_title": {
+				"__TYPE__": "FieldContent",
+				"value": "difference",
+				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "What our Team Stands for",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"cards": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"color",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "#FF4B01",
+									"type": "Select"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Collaboration",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"descrioption",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Aliquip magna pariatur et exercitation exercitation nulla elit nostrud voluptate ea incididunt sint. Eu reprehenderit nostrud cillum ex consectetur qui. Sunt amet culpa ullamco est eiusmod minim labore culpa sunt dolore."
+											}
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We believe that many minds are greater than one, which is why we value collaboration to push our team to create the best.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"icon",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+										"width": 3810,
+										"height": 5715
+									},
+									"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+									"width": 3810,
+									"height": 5715,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We believe in 360 degrees of trust, which means trust in yourself and everyone around you.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Integrity",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"color",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "#FAA000"
+								}
+							],
+							[
+								"icon",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+										"width": 5616,
+										"height": 3744
+									},
+									"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+									"width": 5616,
+									"height": 3744,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Ownership",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Our clients present us with challenges and we take them personally as if they were our own - motivating us to provide the best service.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"color",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "#F78B63"
+								}
+							],
+							[
+								"icon",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51",
+										"width": 2545,
+										"height": 2545
+									},
+									"url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51",
+									"width": 2545,
+									"height": 2545,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "We believe in being the best you can be, producing the best you can and inspiring others to do the same.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Excellence",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"color",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "#4AA69D"
+								}
+							],
+							[
+								"icon",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+										"width": 4000,
+										"height": 4000
+									},
+									"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+									"width": 4000,
+									"height": 4000,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Core Values",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title_position": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Center"
+			},
+			"background": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQwOTI3NzgwfDA&ixlib=rb-4.0.3&q=85",
+				"alt": "orange fruits on blue ceramic bowl",
+				"origin": {
+					"id": "-QOUBSKHvAM",
+					"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQwOTI3NzgwfDA&ixlib=rb-4.0.3&q=85",
+					"width": 4960,
+					"height": 3594
+				},
+				"width": 4960,
+				"height": 3594,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"type": "Number",
+				"value": "60"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"type": "Number",
+				"value": "60"
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#425B76",
+				"type": "Select"
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "gridCardVariantTwo",
+		"primary": {
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"type": "Number",
+				"value": "60"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"type": "Number",
+				"value": "60"
+			},
+			"background": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+					"width": 4076,
+					"height": 2712
+				},
+				"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+				"width": 4076,
+				"height": 2712,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Why Poeta?",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "We’re the creative experts who fill in technical gaps on any team, whether it’s software development, systems optimization, or automation to get businesses back on track. We help our clients take an idea or challenge and find a tailored solution that helps them eliminate barriers.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"cards": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Comprehensive Development Services",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": " Save time and effort working with one vendor for custom app development, software modernization, system integration, cloud migration to consultancy.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"icon",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef",
+										"width": 4000,
+										"height": 6000
+									},
+									"url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef",
+									"width": 4000,
+									"height": 6000,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Global Support & Insights ",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDA5Mjc3ODB8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced fruit on white surface",
+									"origin": {
+										"id": "YSA1IRkGAsg",
+										"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDA5Mjc3ODB8MA&ixlib=rb-4.0.3&q=85",
+										"width": 5760,
+										"height": 3840
+									},
+									"width": 5760,
+									"height": 3840,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Receive 24/7 support and know their solutions have considered global trends and technological advancements by tapping into our diverse workforce in our innovation centres in Canada, Vietnam, and Australia.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1610833805553-43556a0f821d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQwOTI3NzgwfDA&ixlib=rb-4.0.3&q=85",
+									"alt": "yellow lemon fruit on white surface",
+									"origin": {
+										"id": "2aFE-gUcCvc",
+										"url": "https://images.unsplash.com/photo-1610833805553-43556a0f821d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQwOTI3NzgwfDA&ixlib=rb-4.0.3&q=85",
+										"width": 4458,
+										"height": 6413
+									},
+									"width": 4458,
+									"height": 6413,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Customized To Industries ",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Rapid user adoption and satisfaction with solutions that merge technology with your industry insights and considerations of your team, to ensure they reduce redundant, administrative tasks.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1581340752304-a781f821e8ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDA5Mjc3ODB8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced green lime on brown wooden table",
+									"origin": {
+										"id": "UFrsHcCi21A",
+										"url": "https://images.unsplash.com/photo-1581340752304-a781f821e8ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDA5Mjc3ODB8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3092,
+										"height": 5353
+									},
+									"width": 3092,
+									"height": 5353,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Collaborative Engagements ",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Exceed expectations with solutions built on expertise and collaboration through listening, transparency, and iteration to deliver flawless execution and innovation that lead to shared success. ",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced fruit on white surface",
+									"origin": {
+										"id": "YSA1IRkGAsg",
+										"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 5760,
+										"height": 3840
+									},
+									"width": 5760,
+									"height": 3840,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Measurable Business Success ",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Results captured that drive business profits, through increase revenue with new eCommerce or Mobile apps, and reduced costs with streamlining business operations.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxMDU2MjY1fDA&ixlib=rb-4.0.3&q=85",
+									"alt": "yellow lemon fruit on white surface",
+									"origin": {
+										"id": "7WAGthfGJ9w",
+										"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxMDU2MjY1fDA&ixlib=rb-4.0.3&q=85",
+										"width": 5460,
+										"height": 3640
+									},
+									"width": 5460,
+									"height": 3640,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Beautiful and robust code that works, for we know that at the end of the day a solution is only as good as its source code. Our clients appreciate that we excel in delivering projects on time, on budget, and on scope. ",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Excellence In Execution ",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"sub_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Why Client’s Partner With Us",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#EDF3FB",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "gridCardVariantThree",
+		"primary": {
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"value": "78",
+				"type": "Number"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"value": "35",
+				"type": "Number"
+			},
+			"sub_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Here’s how we can help you.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "When it comes to custom software development and systems enablement, we create source code that any Developer, Designer or Engineer will appreciate. For our Marketing, Operations, and HR leaders, they can trust that the code will work the way they asked for and bring about the benefits they need.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"cards": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43",
+										"width": 4024,
+										"height": 4024
+									},
+									"url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43",
+									"width": 4024,
+									"height": 4024,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Platform Utilization",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Whether it's maximizing the full benefits and features of ERP systems or integrations with CRMs, Poeta turns your technology investments into strategic advantages.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"button_label",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Learn More"
+								}
+							],
+							[
+								"button_link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://www.figma.com/design/4ZfOG8k6kTzU25U5Qx14JY/2024-Refresh-%7C-SM-%26-Poeta?node-id=642-6597&m=dev",
+										"target": "_blank",
+										"text": ""
+									}
+								}
+							],
+							[
+								"button_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "Form Modal",
+									"type": "Select"
+								}
+							],
+							[
+								"form_selection",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "TALK TO EXPERT FORM",
+									"type": "Select"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxMDU2MjY1fDA&ixlib=rb-4.0.3&q=85",
+									"alt": "yellow lemon fruit on white surface",
+									"origin": {
+										"id": "7WAGthfGJ9w",
+										"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxMDU2MjY1fDA&ixlib=rb-4.0.3&q=85",
+										"width": 5460,
+										"height": 3640
+									},
+									"width": 5460,
+									"height": 3640,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Platform Utilization",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Whether it's maximizing the full benefits and features of ERP systems or integrations with CRMs, Poeta turns your technology investments into strategic advantages.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"button_label",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Learn More"
+								}
+							],
+							[
+								"button_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "Form Modal",
+									"type": "Select"
+								}
+							],
+							[
+								"form_selection",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "TALK TO EXPERT FORM",
+									"type": "Select"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1592187270271-9a4b84faa228?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced orange fruit on blue surface",
+									"origin": {
+										"id": "8ZGgg6rhzxs",
+										"url": "https://images.unsplash.com/photo-1592187270271-9a4b84faa228?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 4000,
+										"height": 6000
+									},
+									"width": 4000,
+									"height": 6000,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Platform Utilization",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Whether it's maximizing the full benefits and features of ERP systems or integrations with CRMs, Poeta turns your technology investments into strategic advantages.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"button_label",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Learn More"
+								}
+							],
+							[
+								"button_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "Form Modal",
+									"type": "Select"
+								}
+							],
+							[
+								"form_selection",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "TALK TO EXPERT FORM",
+									"type": "Select"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Platform Utilization",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Whether it's maximizing the full benefits and features of ERP systems or integrations with CRMs, Poeta turns your technology investments into strategic advantages.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "assorted sliced citrus fruits on brown wooden chopping board",
+									"origin": {
+										"id": "1CsaVdwfIew",
+										"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3709,
+										"height": 5563
+									},
+									"width": 3709,
+									"height": 5563,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"button_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "Link",
+									"type": "Select"
+								}
+							],
+							[
+								"button_label",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Learn More"
+								}
+							],
+							[
+								"form_selection",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "TALK TO EXPERT FORM",
+									"type": "Select"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Platform Utilization",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced grapefruits",
+									"origin": {
+										"id": "ezSFnAFi9hY",
+										"url": "https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3024,
+										"height": 4032
+									},
+									"width": 3024,
+									"height": 4032,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Whether it's maximizing the full benefits and features of ERP systems or integrations with CRMs, Poeta turns your technology investments into strategic advantages.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"button_label",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Learn More"
+								}
+							],
+							[
+								"button_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "Form Modal",
+									"type": "Select"
+								}
+							],
+							[
+								"form_selection",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "CONTACT US FORM",
+									"type": "Select"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Get In Touch",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Get In Touch\n\nWe’ll work with you to create a purposed built cloud architecture for your business\nand migrate you there",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"button_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "Link",
+									"type": "Select"
+								}
+							],
+							[
+								"button_link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "AnyLink",
+										"text": ""
+									}
+								}
+							],
+							[
+								"button_label",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Contact Us"
+								}
+							],
+							[
+								"form_selection",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "TALK TO EXPERT FORM",
+									"type": "Select"
+								}
+							]
+						]
+					}
+				]
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "transparent",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "gridCardVariantFour",
+		"primary": {
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "transparent"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Why Poeta?",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "We’re the creative experts who fill in technical gaps on any team, whether it’s software development, systems optimization, or automation to get businesses back on track. We help our clients take an idea or challenge and find a tailored solution that helps them eliminate barriers.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"cards": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51",
+										"width": 2545,
+										"height": 2545
+									},
+									"url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51",
+									"width": 2545,
+									"height": 2545,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Whether it's maximizing the full benefits and features of ERP systems or integrations with CRMs, Poeta turns your technology investments into strategic advantages.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"button_label",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Platform Solutions"
+								}
+							],
+							[
+								"button_type",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "Link"
+								}
+							],
+							[
+								"button_link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://slicemachine.dev",
+										"target": "_blank"
+									}
+								}
+							],
+							[
+								"form_selection",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "CONTACT US FORM"
+								}
+							],
+							[
+								"specical_list_title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Development Specialites",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"special_list_item_one",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "HubSpot",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"special_list_item_two",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Amazon Web Services",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"special_list_item_three",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "HubSpot",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"special_list_item_four",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Amazon Web Services",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"special_list_button_label",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "except",
+									"type": "Text"
+								}
+							],
+							[
+								"special_list_button_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "Form Modal",
+									"type": "Select"
+								}
+							],
+							[
+								"specical_list_button_link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "beneath"
+									}
+								}
+							],
+							[
+								"spcial_list_form_selection",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "CONTACT US FORM",
+									"type": "Select"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Platform Utilization",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"special_list_item_one_icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1592187270271-9a4b84faa228?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced orange fruit on blue surface",
+									"origin": {
+										"id": "8ZGgg6rhzxs",
+										"url": "https://images.unsplash.com/photo-1592187270271-9a4b84faa228?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 4000,
+										"height": 6000
+									},
+									"width": 4000,
+									"height": 6000,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"special_list_item_four_icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced fruit on white surface",
+									"origin": {
+										"id": "YSA1IRkGAsg",
+										"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 5760,
+										"height": 3840
+									},
+									"width": 5760,
+									"height": 3840,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"special_list_item_three_icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1616679312958-a86d9539afae?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "orange fruit on white ceramic plate",
+									"origin": {
+										"id": "Jr7t5QviCDM",
+										"url": "https://images.unsplash.com/photo-1616679312958-a86d9539afae?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3024,
+										"height": 4032
+									},
+									"width": 3024,
+									"height": 4032,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"special_list_item_two_icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "assorted sliced citrus fruits on brown wooden chopping board",
+									"origin": {
+										"id": "1CsaVdwfIew",
+										"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3709,
+										"height": 5563
+									},
+									"width": 3709,
+									"height": 5563,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1581340752304-a781f821e8ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced green lime on brown wooden table",
+									"origin": {
+										"id": "UFrsHcCi21A",
+										"url": "https://images.unsplash.com/photo-1581340752304-a781f821e8ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 3092,
+										"height": 5353
+									},
+									"width": 3092,
+									"height": 5353,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Workforce Optimizations",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Manage manpower and eliminate redundant administrative work to make informed decisions, allocate resources effectively, and adapt swiftly to changing demands.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"specical_list_title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Development Specialites",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"special_list_item_one_icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1582789760972-c8916cebe649?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxMDU2MjY1fDA&ixlib=rb-4.0.3&q=85",
+									"alt": "orange fruit in water with water",
+									"origin": {
+										"id": "uYM_PQJ8VvY",
+										"url": "https://images.unsplash.com/photo-1582789760972-c8916cebe649?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxMDU2MjY1fDA&ixlib=rb-4.0.3&q=85",
+										"width": 4380,
+										"height": 2901
+									},
+									"width": 4380,
+									"height": 2901,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"special_list_item_two_icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxMDU2MjY1fDA&ixlib=rb-4.0.3&q=85",
+									"alt": "yellow lemon fruit on white surface",
+									"origin": {
+										"id": "7WAGthfGJ9w",
+										"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxMDU2MjY1fDA&ixlib=rb-4.0.3&q=85",
+										"width": 5460,
+										"height": 3640
+									},
+									"width": 5460,
+									"height": 3640,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"special_list_item_one",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Productivity & Data Visualization",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"special_list_item_two",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Complex Field & Contractor Management",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"special_list_item_three",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Timesheet & Salary Reconciliation",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"special_list_item_three_icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxMDU2MjY1fDA&ixlib=rb-4.0.3&q=85",
+									"alt": "orange fruits under blue sky during daytime",
+									"origin": {
+										"id": "eaOjEz8746k",
+										"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxMDU2MjY1fDA&ixlib=rb-4.0.3&q=85",
+										"width": 5688,
+										"height": 3792
+									},
+									"width": 5688,
+									"height": 3792,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"special_list_item_four_icon",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+									"alt": "sliced fruit on white surface",
+									"origin": {
+										"id": "YSA1IRkGAsg",
+										"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+										"width": 5760,
+										"height": 3840
+									},
+									"width": 5760,
+									"height": 3840,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"special_list_item_four",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Redundant Administration Elimination",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

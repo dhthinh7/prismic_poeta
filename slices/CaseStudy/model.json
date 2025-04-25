@@ -1,0 +1,88 @@
+{
+  "id": "case_study",
+  "type": "SharedSlice",
+  "name": "CaseStudy",
+  "description": "CaseStudy",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": "Custom padding top (Ex: 10 => padding-top: 10px)"
+          }
+        },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": "Custom padding bottom (Ex: 10 => padding-bottom: 10px)"
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "transparent",
+              "#FFFFFF",
+              "#EDF3FB",
+              "#425B76",
+              "#C3D4F119"
+            ],
+            "default_value": "transparent"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "sub_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Sub Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "title_position": {
+          "type": "Select",
+          "config": {
+            "label": "Title Position",
+            "placeholder": "",
+            "options": [
+              "Left",
+              "Right",
+              "Center"
+            ],
+            "default_value": "Left"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

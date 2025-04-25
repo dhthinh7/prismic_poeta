@@ -1,0 +1,75 @@
+{
+  "id": "blog_content",
+  "type": "SharedSlice",
+  "name": "BlogContent",
+  "description": "BlogContent",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "transparent",
+              "#FFFFFF",
+              "#EDF3FB",
+              "#425B76",
+              "#C3D4F119"
+            ],
+            "default_value": "transparent"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "sub_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Sub Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Content",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+            "labels": [
+              "TEXT_TITLE",
+              "BULLETED_LIST_CIRCLE_LEVEL_ONE",
+              "BULLETED_LIST_CIRCLE_LEVEL_TWO",
+              "HIGH_LIGHT"
+            ]
+          }
+        },
+        "thumnail": {
+          "type": "Image",
+          "config": {
+            "label": "Thumnail",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

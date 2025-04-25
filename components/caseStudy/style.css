@@ -1,0 +1,9 @@
+.my-swiper-slide.single-column .swiper-slide {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.my-swiper-slide .swiper-slide {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}

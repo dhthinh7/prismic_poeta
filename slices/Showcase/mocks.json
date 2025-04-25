@@ -3,11 +3,6 @@
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
-			"title": {
-				"__TYPE__": "FieldContent",
-				"value": "gate",
-				"type": "Text"
-			},
 			"cta_label": {
 				"__TYPE__": "FieldContent",
 				"value": "check",
@@ -20,16 +15,21 @@
 					"url": "https://prismic.io"
 				}
 			},
-			"image": {
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "#FFFFFF",
+				"type": "Select"
+			},
+			"right_image": {
 				"origin": {
 					"id": "main",
-					"url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51",
-					"width": 2545,
-					"height": 2545
+					"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+					"width": 8640,
+					"height": 8640
 				},
-				"url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51",
-				"width": 2545,
-				"height": 2545,
+				"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+				"width": 8640,
+				"height": 8640,
 				"edit": {
 					"zoom": 1,
 					"crop": {
@@ -43,108 +43,98 @@
 				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			},
-			"info_image": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
-					"width": 6597,
-					"height": 4398
-				},
-				"url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
-				"width": 6597,
-				"height": 4398,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"credits": null,
-				"alt": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "withCategory",
-		"primary": {
+			"counter_up": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+										"width": 6597,
+										"height": 4398
+									},
+									"url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+									"width": 6597,
+									"height": 4398,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"counter_number",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Number",
+									"value": "300"
+								}
+							],
+							[
+								"label",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Product builds",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"is_counter_up_plus",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							]
+						]
+					}
+				]
+			},
+			"right_image_label": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Case Studies",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
 			"title": {
-				"__TYPE__": "FieldContent",
-				"value": "carefully",
-				"type": "Text"
-			},
-			"cta_label": {
-				"__TYPE__": "FieldContent",
-				"value": "heading",
-				"type": "Text"
-			},
-			"cta_link": {
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "ExternalLink",
-					"url": "http://twitter.com"
-				}
-			},
-			"image": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1587905069134-008460d7a636",
-					"width": 3935,
-					"height": 5894
-				},
-				"url": "https://images.unsplash.com/photo-1587905069134-008460d7a636",
-				"width": 3935,
-				"height": 5894,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"credits": null,
-				"alt": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
-			"info_image": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1547082299-de196ea013d6",
-					"width": 4272,
-					"height": 2848
-				},
-				"url": "https://images.unsplash.com/photo-1547082299-de196ea013d6",
-				"width": 4272,
-				"height": 2848,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"credits": null,
-				"alt": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
-			"category": {
-				"__TYPE__": "FieldContent",
-				"value": "troops",
-				"type": "Text"
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Proudly supporting medium & multinational organizations world-wide",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
 			}
 		},
 		"items": [

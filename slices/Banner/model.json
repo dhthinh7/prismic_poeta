@@ -1,0 +1,260 @@
+{
+  "id": "banner",
+  "type": "SharedSlice",
+  "name": "Banner",
+  "description": "Banner",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Banner With Button",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em",
+            "labels": [
+              "TEXT_BANNER_LARGE"
+            ]
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Description",
+            "placeholder": "Input description"
+          }
+        },
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "left_image": {
+          "type": "Image",
+          "config": {
+            "label": "Left Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "right_image": {
+          "type": "Image",
+          "config": {
+            "label": "Right Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "right_bottom_image": {
+          "type": "Image",
+          "config": {
+            "label": "Right Bottom Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "button": {
+          "type": "Group",
+          "config": {
+            "label": "Button",
+            "repeat": true,
+            "fields": {
+              "button_label": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Label",
+                  "placeholder": "Input the button label"
+                }
+              },
+              "button_type": {
+                "type": "Select",
+                "config": {
+                  "label": "Button Type",
+                  "placeholder": "Select type for button action",
+                  "options": [
+                    "Link",
+                    "Form Modal"
+                  ],
+                  "default_value": "Link"
+                }
+              },
+              "button_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Button Link",
+                  "placeholder": "Input link if type is 'Link'",
+                  "allowTargetBlank": true,
+                  "select": null,
+                  "allowText": true
+                }
+              },
+              "form_selection": {
+                "type": "Select",
+                "config": {
+                  "label": "Form Selection",
+                  "placeholder": "Select form if type is 'Form Modal'",
+                  "options": [
+                    "TALK TO EXPERT FORM",
+                    "CONTACT US FORM"
+                  ],
+                  "default_value": "TALK TO EXPERT FORM"
+                }
+              },
+              "is_show_indicator": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Is show indicator",
+                  "placeholder_false": "false",
+                  "placeholder_true": "true",
+                  "default_value": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "banner",
+      "name": "Banner",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Title",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em",
+            "labels": [
+              "TEXT_BANNER_LARGE"
+            ]
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Description",
+            "placeholder": "Input description"
+          }
+        },
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "partner_image": {
+          "type": "Image",
+          "config": {
+            "label": "Partner Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "bannerWithSideImage",
+      "name": "BannerWithSideImage",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em",
+            "labels": [
+              "TEXT_BANNER_LARGE"
+            ]
+          }
+        },
+        "sub_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Sub Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "left_image": {
+          "type": "Image",
+          "config": {
+            "label": "Left Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "right_image": {
+          "type": "Image",
+          "config": {
+            "label": "Right Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "side_image": {
+          "type": "Image",
+          "config": {
+            "label": "Side Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "side_image_position": {
+          "type": "Select",
+          "config": {
+            "label": "Side Image Position",
+            "placeholder": "",
+            "options": [
+              "Right",
+              "Left"
+            ],
+            "default_value": "Right"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

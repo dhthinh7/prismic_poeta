@@ -1,0 +1,140 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"short_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Innovator, executive leader, entrepreneur, humanitarian. Before building Poeta Digital, Tim Nguyen led many global fortune 500 companies through growth and digital transformation, streamlining operations using technology. \n\nWhile vacationing in Thailand in 2004, Tim recognized his life’s purpose when a devastating tsunami hit: helping people, solving problems, and scaling those impacts through technology.",
+							"spans": [
+								{
+									"type": "em",
+									"start": 0,
+									"end": 408
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"full_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Developing Global Technical Expertise\nAs a young man, Tim ventured into professional opportunities that led him far beyond the landscapes of Western Canada. \n\nAs VP, Research & Development at Atlas Communications in Edmonton in 2000, Tim launched Canada’s first line of wireless POS terminals before taking the company public. Shortly after, he crossed the pond to London, England to take on a B2B customer base of over 10,000 as the General Manager of BT Local Business, where he achieved the #1 revenue ranking in the city. \n\nFollowing his success, Tim moved to Australia in 2005 and worked for Singtel Optus, a $19.5 billion company, where he oversaw digital transformation, running nationwide initiatives to amalgamate entities, create operational efficiencies, and solve critical business issues. He managed some of Australia’s largest tenders and designed and implemented company digital transformation processes nationwide to increase efficiency and solve business issues.\n\nFrom there, Tim returned to Vietnam where he worked as the Global Chief Strategy Officer at YellowPaper Mobile Financial Solutions and Head of YellowPaper Vietnam, responsible for strategy, planning, and organizational growth locally and globally. \n\nTim eventually came back to North America, where he took the next step in his career: branching out on his own. \n\nTim’s Entrepreneurial Journey\nAfter his experiences abroad, Tim’s innovative mindset, passion for technology, global expertise, and genuine care for the welfare of others brought Poeta Digital (Poeta) to life. Originally founded in Seattle, USA, Tim later moved the headquarters to Calgary, AB.\n\nThrough Poeta’s early years, Tim and his team helped streamline operational processes and automate redundant tasks to improve businesses’ bottom lines. Today, Tim has established Poeta as the leading provider of mobile and web product development for business-critical applications.",
+							"spans": [
+								{
+									"type": "label",
+									"start": 0,
+									"end": 37,
+									"data": "HIGH_LIGHT"
+								},
+								{
+									"type": "label",
+									"start": 1345,
+									"end": 1374,
+									"data": "HIGH_LIGHT"
+								},
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 37
+								},
+								{
+									"type": "strong",
+									"start": 1345,
+									"end": 1374
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"leader_image": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDIyODUwMzB8MA&ixlib=rb-4.0.3&q=85",
+				"alt": "assorted sliced citrus fruits on brown wooden chopping board",
+				"origin": {
+					"id": "1CsaVdwfIew",
+					"url": "https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDIyODUwMzB8MA&ixlib=rb-4.0.3&q=85",
+					"width": 3709,
+					"height": 5563
+				},
+				"width": 3709,
+				"height": 5563,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"name": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Tim Nguyen",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"job_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "CEO",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "When it comes to custom software development and systems enablement, we create source code in the form of poetry. Poeta only employs artists in software solutions whose mastery in coding is matched by an innate determination to help people worldwide.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Code Masters, Innovation Leaders.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

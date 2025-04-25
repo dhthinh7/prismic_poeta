@@ -1,0 +1,425 @@
+{
+  "id": "text_with_image",
+  "type": "SharedSlice",
+  "name": "TextWithImage",
+  "description": "TextWithImage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": ""
+          }
+        },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": ""
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "transparent",
+              "#FFFFFF",
+              "#EDF3FB",
+              "#425B76",
+              "#C3D4F119"
+            ],
+            "default_value": "transparent"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "sub_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Sub Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "short_content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Short Content",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,list-item,o-list-item",
+            "labels": [
+              "TEXT_TITLE",
+              "HIGH_LIGHT"
+            ]
+          }
+        },
+        "full_content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Full Content",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,list-item,o-list-item",
+            "labels": [
+              "TEXT_TITLE",
+              "HIGH_LIGHT"
+            ]
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_position": {
+          "type": "Select",
+          "config": {
+            "label": "Image Position",
+            "placeholder": "",
+            "options": [
+              "Right",
+              "Left"
+            ],
+            "default_value": "Right"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "textWithImageButton",
+      "name": "TextWithImageButton",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": ""
+          }
+        },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": ""
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "transparent",
+              "#FFFFFF",
+              "#EDF3FB",
+              "#425B76",
+              "#C3D4F119"
+            ],
+            "default_value": "transparent"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "sub_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Sub Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "full_content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Full Content",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,list-item,o-list-item,preformatted",
+            "labels": [
+              "TEXT_TITLE",
+              "HIGH_LIGHT"
+            ]
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_position": {
+          "type": "Select",
+          "config": {
+            "label": "Image Position",
+            "placeholder": "",
+            "options": [
+              "Right",
+              "Left"
+            ],
+            "default_value": "Right"
+          }
+        },
+        "button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Button Label",
+            "placeholder": "Input the button label"
+          }
+        },
+        "button_type": {
+          "type": "Select",
+          "config": {
+            "label": "Button Type",
+            "placeholder": "Select type for button action",
+            "options": [
+              "Link",
+              "Form Modal"
+            ]
+          }
+        },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "Input link if type is 'Link'",
+            "allowTargetBlank": true,
+            "select": null,
+            "allowText": true
+          }
+        },
+        "form_selection": {
+          "type": "Select",
+          "config": {
+            "label": "Form Selection",
+            "placeholder": "Select form if type is 'Form Modal'",
+            "options": [
+              "TALK TO EXPERT FORM",
+              "CONTACT US FORM"
+            ]
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "text",
+      "name": "Text",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": ""
+          }
+        },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": ""
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "transparent",
+              "#FFFFFF",
+              "#EDF3FB",
+              "#425B76",
+              "#C3D4F119"
+            ],
+            "default_value": "transparent"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+            "labels": [
+              "TEXT_TITLE",
+              "HIGH_LIGHT",
+              "HIGH_LIGHT_ORANGE_RED",
+              "HIGH_LIGHT_ORANGE_YELLOW",
+              "HIGH_LIGHT_TEAL_GREEN",
+              "SUBHEADING",
+              "LARGE_TITLE"
+            ]
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "textWithImageButtonSecondary",
+      "name": "TextWithImageButtonSecondary",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "padding_top": {
+          "type": "Number",
+          "config": {
+            "label": "Padding top",
+            "placeholder": ""
+          }
+        },
+        "padding_bottom": {
+          "type": "Number",
+          "config": {
+            "label": "Padding bottom",
+            "placeholder": ""
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "transparent",
+              "#FFFFFF",
+              "#EDF3FB",
+              "#425B76",
+              "#C3D4F119"
+            ],
+            "default_value": "transparent"
+          }
+        },
+        "full_content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Full Content",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,list-item,o-list-item,preformatted",
+            "labels": [
+              "TEXT_TITLE",
+              "HIGH_LIGHT",
+              "SUBHEADING",
+              "LARGE_TITLE"
+            ]
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_position": {
+          "type": "Select",
+          "config": {
+            "label": "Image Position",
+            "placeholder": "",
+            "options": [
+              "Right",
+              "Left"
+            ],
+            "default_value": "Right"
+          }
+        },
+        "button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Button Label",
+            "placeholder": "Input the button label"
+          }
+        },
+        "button_variant": {
+          "type": "Select",
+          "config": {
+            "label": "Button Variant",
+            "placeholder": "",
+            "options": [
+              "solid",
+              "outline"
+            ]
+          }
+        },
+        "button_type": {
+          "type": "Select",
+          "config": {
+            "label": "Button Type",
+            "placeholder": "Select type for button action",
+            "options": [
+              "Link",
+              "Form Modal"
+            ]
+          }
+        },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "Input link if type is 'Link'",
+            "allowTargetBlank": true,
+            "select": null,
+            "allowText": true
+          }
+        },
+        "form_selection": {
+          "type": "Select",
+          "config": {
+            "label": "Form Selection",
+            "placeholder": "Select form if type is 'Form Modal'",
+            "options": [
+              "TALK TO EXPERT FORM",
+              "CONTACT US FORM"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

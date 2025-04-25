@@ -1,0 +1,300 @@
+{
+  "format": "page",
+  "id": "services",
+  "label": "Services",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "display_name": {
+        "type": "Text",
+        "config": {
+          "label": "Display Name",
+          "placeholder": "Display name of the page"
+        }
+      },
+      "short_description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Short Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "thumbnail": {
+        "type": "Image",
+        "config": {
+          "label": "Thumbnail",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "level_one": {
+        "type": "Link",
+        "config": {
+          "label": "Parent Category",
+          "select": "document",
+          "customtypes": ["category"]
+        }
+      },
+      "level_two": {
+        "type": "Link",
+        "config": {
+          "label": "First Child Category",
+          "select": "document",
+          "customtypes": ["category"]
+        }
+      },
+      "level_three": {
+        "type": "Link",
+        "config": {
+          "label": "Second Child Category",
+          "select": "document",
+          "customtypes": ["category"]
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": "Search result showing"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "similar_case_studies": {
+              "type": "SharedSlice"
+            },
+            "resources": {
+              "type": "SharedSlice"
+            },
+            "innovation_lead": {
+              "type": "SharedSlice"
+            },
+            "contact_us_form": {
+              "type": "SharedSlice"
+            },
+            "talk_to_expert_form": {
+              "type": "SharedSlice"
+            },
+            "carousel": {
+              "type": "SharedSlice"
+            },
+            "carousel_util": {
+              "type": "SharedSlice"
+            },
+            "industries_served": {
+              "type": "SharedSlice"
+            },
+            "development_approach": {
+              "type": "SharedSlice"
+            },
+            "text_with_image": {
+              "type": "SharedSlice"
+            },
+            "careers": {
+              "type": "SharedSlice"
+            },
+            "our_vision": {
+              "type": "SharedSlice"
+            },
+            "testimonials": {
+              "type": "SharedSlice"
+            },
+            "video_block": {
+              "type": "SharedSlice"
+            },
+            "we_are_here": {
+              "type": "SharedSlice"
+            },
+            "showcase": {
+              "type": "SharedSlice"
+            },
+            "certificate": {
+              "type": "SharedSlice"
+            },
+            "case_study": {
+              "type": "SharedSlice"
+            },
+            "single_heading": {
+              "type": "SharedSlice"
+            },
+            "image_slice": {
+              "type": "SharedSlice"
+            },
+            "grid_card": {
+              "type": "SharedSlice"
+            },
+            "breadcrumb": {
+              "type": "SharedSlice"
+            },
+            "banner": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": "Defines the page title (shown in the browser tab and search results)"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": "Short description for SEO (meta description)"
+        }
+      },
+      "keywords": {
+        "type": "Group",
+        "config": {
+          "label": "Keywords",
+          "repeat": true,
+          "fields": {
+            "keyword": {
+              "type": "Text",
+              "config": {
+                "label": "Keyword",
+                "placeholder": "Keyword for SEO (Google doesn't use them anymore, but some engines do)"
+              }
+            }
+          }
+        }
+      },
+      "open_graph": {
+        "type": "Group",
+        "config": {
+          "label": "Open Graph",
+          "repeat": false,
+          "fields": {
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title",
+                "placeholder": "Metadata for Open Graph (used for Facebook, LinkedIn, etc.)."
+              }
+            },
+            "description": {
+              "type": "Text",
+              "config": {
+                "label": "Description",
+                "placeholder": "Metadata for Open Graph (used for Facebook, LinkedIn, etc.)."
+              }
+            },
+            "url": {
+              "type": "Link",
+              "config": {
+                "label": "Url",
+                "placeholder": "Metadata for Open Graph (used for Facebook, LinkedIn, etc.).",
+                "allowTargetBlank": true,
+                "select": null,
+                "allowText": true
+              }
+            },
+            "site_name": {
+              "type": "Text",
+              "config": {
+                "label": "Site Name",
+                "placeholder": "Metadata for Open Graph (used for Facebook, LinkedIn, etc.)."
+              }
+            },
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      },
+      "twitter": {
+        "type": "Group",
+        "config": {
+          "label": "Twitter",
+          "repeat": false,
+          "fields": {
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title",
+                "placeholder": "Metadata for Twitter Cards (used when sharing on Twitter)."
+              }
+            },
+            "site": {
+              "type": "Text",
+              "config": {
+                "label": "Site",
+                "placeholder": "Metadata for Twitter Cards (used when sharing on Twitter)."
+              }
+            },
+            "description": {
+              "type": "Text",
+              "config": {
+                "label": "Description",
+                "placeholder": "Metadata for Twitter Cards (used when sharing on Twitter)."
+              }
+            },
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      },
+      "authors": {
+        "type": "Group",
+        "config": {
+          "label": "Authors",
+          "repeat": true,
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name",
+                "placeholder": "List of authors with names and URLs"
+              }
+            },
+            "url": {
+              "type": "Link",
+              "config": {
+                "label": "Url",
+                "placeholder": "List of authors with names and URLs",
+                "allowTargetBlank": true,
+                "select": null,
+                "allowText": true
+              }
+            }
+          }
+        }
+      },
+      "application_name": {
+        "type": "Text",
+        "config": {
+          "label": "Application Name",
+          "placeholder": "Name of the web app"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"image": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1547514701-42782101795e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxN3x8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxMDU2MjY1fDA&ixlib=rb-4.0.3&q=85",
+				"alt": "two orange fruits on table",
+				"origin": {
+					"id": "nibgG33H0F8",
+					"url": "https://images.unsplash.com/photo-1547514701-42782101795e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxN3x8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzQxMDU2MjY1fDA&ixlib=rb-4.0.3&q=85",
+					"width": 4000,
+					"height": 6000
+				},
+				"width": 4000,
+				"height": 6000,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"background_image": {
+				"provider": "imgix",
+				"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+				"alt": "sliced orange fruit on white surface",
+				"origin": {
+					"id": "92HwFhCp-MQ",
+					"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NDEwNTYyNjV8MA&ixlib=rb-4.0.3&q=85",
+					"width": 3699,
+					"height": 2959
+				},
+				"width": 3699,
+				"height": 2959,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "We Are Here.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "We have the experience with over 300 mobile software products built across 5 continents across most industries and many use cases.\n\nLet’s see what we can do for you.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Talk To Expert"
+			},
+			"button_type": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Form Modal"
+			},
+			"padding_top": {
+				"__TYPE__": "FieldContent",
+				"type": "Number",
+				"value": "60"
+			},
+			"padding_bottom": {
+				"__TYPE__": "FieldContent",
+				"type": "Number",
+				"value": "60"
+			}
+		},
+		"items": []
+	}
+]

@@ -17,10 +17,10 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "sub_menu_item": {
+            "submenu_header": {
               "type": "SharedSlice"
             },
-            "heading": {
+            "sub_menu_item": {
               "type": "SharedSlice"
             }
           }
@@ -33,7 +33,7 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "heading": {
+            "submenu_header": {
               "type": "SharedSlice"
             },
             "sub_menu_item": {
@@ -49,7 +49,7 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "heading": {
+            "submenu_header": {
               "type": "SharedSlice"
             },
             "sub_menu_item": {
@@ -65,7 +65,7 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "heading": {
+            "submenu_header": {
               "type": "SharedSlice"
             },
             "sub_menu_item": {
