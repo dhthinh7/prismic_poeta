@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
 import { PrismicPreview } from '@prismicio/next'
 import { createClient, repositoryName } from '@/prismicio'
-import Header from '@/components/header/Header'
+import Header from '@/components/0header/Header'
 import StoreProvider from '@/components/layout/StoreProvider'
 
 import { Source_Sans_3 } from 'next/font/google'
 
 import '@fortawesome/fontawesome-svg-core/styles.css' // import Font Awesome CSS
 import '../styles/globals.css'
-import Footer from '@/components/footer/Footer'
+import Footer from '@/components/0footer/Footer'
 
 export const metadata: Metadata = {
   title: 'Poeta',

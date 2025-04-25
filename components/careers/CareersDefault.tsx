@@ -2,10 +2,10 @@
 
 import React, { useMemo, useState } from 'react'
 import { Content } from '@prismicio/client'
-import ConditionRender from '../shared/ConditionRender'
+import ConditionRender from '../0shared/ConditionRender'
 import Career from './Career'
-import Button from '../shared/button/Button'
-import HeaderSection from '../shared/section/HeaderSection'
+import Button from '../0shared/button/Button'
+import HeaderSection from '../0shared/section/HeaderSection'
 
 interface ICareersDefault {
   slice: Content.CareersSlice

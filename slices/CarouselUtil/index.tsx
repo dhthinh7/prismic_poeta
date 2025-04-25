@@ -1,4 +1,4 @@
-import CarouselUtilSlice from '@/components/carouseSlice/CarouselUtilSlice'
+import CarouselUtilSlice from '@/components/0carouseSlice/CarouselUtilSlice'
 import SectionWrapper from '@/components/layout/SectionWrapper'
 import SliceWrapper from '@/components/layout/SliceWrapper'
 import { Content } from '@prismicio/client'

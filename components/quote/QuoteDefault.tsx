@@ -6,10 +6,10 @@ import { Autoplay, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { cn } from '@/lib/utils'
 import AngleRight from '../icons/AngleRight'
-import RichText from '../shared/RichText'
+import RichText from '../0shared/RichText'
 import QuoteIcon from '../icons/QuoteIcon'
 import { PrismicImage } from '@prismicio/react'
-import HeaderSection from '../shared/section/HeaderSection'
+import HeaderSection from '../0shared/section/HeaderSection'
 
 import './style.css'
 

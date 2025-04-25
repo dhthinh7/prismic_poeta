@@ -1,7 +1,7 @@
 import React from 'react'
 import { PrismicImage } from '@prismicio/react'
 import { ImageField, RichTextField } from '@prismicio/client'
-import RichText from '../shared/RichText'
+import RichText from '../0shared/RichText'
 
 interface ILeaderDetailMainContent {
   leader_image: ImageField<never>

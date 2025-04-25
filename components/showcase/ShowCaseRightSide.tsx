@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils'
 import { ImageField, RichTextField } from '@prismicio/client'
 import { PrismicNextImage } from '@prismicio/next'
 import React from 'react'
-import RichText from '../shared/RichText'
+import RichText from '../0shared/RichText'
 interface IShowCaseRightSide {
   className?: string
   image: ImageField<never>

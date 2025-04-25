@@ -1,8 +1,8 @@
 import { Content } from '@prismicio/client'
 import React from 'react'
-import RichText from '../shared/RichText'
+import RichText from '../0shared/RichText'
 import { PrismicImage } from '@prismicio/react'
-import ClientButtonWrapper from '../shared/button/ClientButtonWrapper'
+import ClientButtonWrapper from '../0shared/button/ClientButtonWrapper'
 
 interface IWeAreHereDefault {
   slice: Content.WeAreHereSlice

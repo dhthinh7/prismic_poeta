@@ -5,7 +5,7 @@ import { PrismicNextImage, PrismicNextLink } from '@prismicio/next'
 import CopyRight from './CopyRight'
 import SocialMedias from './SocialMedias'
 import SectionWrapper from '../layout/SectionWrapper'
-import Line from '../shared/line/Line'
+import Line from '../0shared/line/Line'
 
 interface IFooter {
   layout: LayoutDocument<string>

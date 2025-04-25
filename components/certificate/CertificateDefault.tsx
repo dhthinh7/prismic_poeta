@@ -1,8 +1,8 @@
 import React from 'react'
 import { Content } from '@prismicio/client'
-import ConditionRender from '../shared/ConditionRender'
+import ConditionRender from '../0shared/ConditionRender'
 import { PrismicNextImage } from '@prismicio/next'
-import HeaderSection from '../shared/section/HeaderSection'
+import HeaderSection from '../0shared/section/HeaderSection'
 
 interface ICertificateDefault {
   slice: Content.CertificateSlice

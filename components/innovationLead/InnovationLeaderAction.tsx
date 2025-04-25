@@ -3,7 +3,7 @@
 import React, { useCallback } from 'react'
 import { useAppDispatch } from '@/lib/store/hooks'
 import { openModal, updateModalClassWrapper } from '@/lib/store/slices/globalModal.slice'
-import Button from '../shared/button/Button'
+import Button from '../0shared/button/Button'
 import { Simplify } from '@/prismicio-types'
 import { Content } from '@prismicio/client'
 import { SliceZone } from '@prismicio/react'

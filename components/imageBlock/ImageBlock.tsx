@@ -2,8 +2,8 @@ import React from 'react'
 import { Content } from '@prismicio/client'
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next'
 import { prismicUtils } from '@/lib/utils/prismic.util'
-import RichText from '../shared/RichText'
-import HeaderSection from '../shared/section/HeaderSection'
+import RichText from '../0shared/RichText'
+import HeaderSection from '../0shared/section/HeaderSection'
 
 interface IImageBlock {
   slice: Content.ImageSliceSlice

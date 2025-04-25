@@ -1,9 +1,9 @@
 import React from 'react'
 import { Content } from '@prismicio/client'
 import SectionWrapper from '../layout/SectionWrapper'
-import ConditionRender from '../shared/ConditionRender'
+import ConditionRender from '../0shared/ConditionRender'
 import GridCardVariantThreeItem from './GridCardVariantThreeItem'
-import HeaderSection from '../shared/section/HeaderSection'
+import HeaderSection from '../0shared/section/HeaderSection'
 
 interface IGridCardVariantThree {
   slice: {

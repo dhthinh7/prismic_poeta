@@ -1,6 +1,6 @@
 import { ImageField } from '@prismicio/client'
 import React from 'react'
-import ConditionRender from '../shared/ConditionRender'
+import ConditionRender from '../0shared/ConditionRender'
 import { PrismicNextImage } from '@prismicio/next'
 interface ILeftBannerImage {
   image: ImageField<never>

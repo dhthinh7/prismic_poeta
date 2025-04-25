@@ -1,9 +1,9 @@
 import { Content } from '@prismicio/client'
 import React from 'react'
 import SectionWrapper from '../layout/SectionWrapper'
-import RichText from '../shared/RichText'
-import ClientButtonWrapper from '../shared/button/ClientButtonWrapper'
-import ConditionRender from '../shared/ConditionRender'
+import RichText from '../0shared/RichText'
+import ClientButtonWrapper from '../0shared/button/ClientButtonWrapper'
+import ConditionRender from '../0shared/ConditionRender'
 import { PrismicImage, PrismicLink } from '@prismicio/react'
 
 interface IIndustriesServedDefault {

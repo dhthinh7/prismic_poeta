@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Content, ImageField, RichTextField } from '@prismicio/client'
 import SectionWrapper from '../layout/SectionWrapper'
-import RichText from '../shared/RichText'
+import RichText from '../0shared/RichText'
 import LeftBannerImage from './LeftBannerImage'
 import RightBannerImage from './RightBannerImage'
 import { PrismicImage } from '@prismicio/react'

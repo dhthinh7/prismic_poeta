@@ -8,7 +8,7 @@ import {
   PartnershipsDocument,
   ServicesDocument
 } from '@/prismicio-types'
-import ConditionRender from '../shared/ConditionRender'
+import ConditionRender from '../0shared/ConditionRender'
 import SimilarCaseStudyItem from './SimilarCaseStudyItem'
 import SimilarCaseStudyDefaultMobile from './SimilarCaseStudyDefaultMobile'
 import { client } from '@/prismicio'

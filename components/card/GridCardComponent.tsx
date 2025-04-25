@@ -4,9 +4,9 @@ import React, { useState } from 'react'
 import { Content } from '@prismicio/client'
 import BackGroundImage from '../banners/BackGroundImage'
 import SectionWrapper from '../layout/SectionWrapper'
-import ConditionRender from '../shared/ConditionRender'
+import ConditionRender from '../0shared/ConditionRender'
 import GridCardItem from './GridCardItem'
-import HeaderSection from '../shared/section/HeaderSection'
+import HeaderSection from '../0shared/section/HeaderSection'
 
 interface IGridCarComponent {
   slice: {

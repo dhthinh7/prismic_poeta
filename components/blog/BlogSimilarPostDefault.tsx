@@ -2,7 +2,7 @@ import React from 'react'
 import { AllDocumentTypes, BlogDocument, BlogDocumentData, Simplify } from '@/prismicio-types'
 import * as prismic from '@prismicio/client'
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next'
-import Button from '../shared/button/Button'
+import Button from '../0shared/button/Button'
 import { client } from '@/prismicio'
 
 interface IBlogSimilarPostDefault {

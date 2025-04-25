@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { cn } from '@/lib/utils'
-import RichText from '../shared/RichText'
+import RichText from '../0shared/RichText'
 import { ImageField, RichTextField } from '@prismicio/client'
 import { PrismicNextImage } from '@prismicio/next'
 import { utils } from '@/lib/utils/utils'

@@ -2,7 +2,7 @@ import React from 'react'
 import { Content, KeyTextField, RichTextField } from '@prismicio/client'
 import PartnerImage from './RightBottomImage'
 import SectionWrapper from '../layout/SectionWrapper'
-import RichText from '../shared/RichText'
+import RichText from '../0shared/RichText'
 
 interface IBannerWithoutButton {
   slice: {

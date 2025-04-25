@@ -16,7 +16,7 @@ import {
   ServicesDocument
 } from '@/prismicio-types'
 import CloseIcon from '../icons/CloseIcon'
-import ConditionRender from '../shared/ConditionRender'
+import ConditionRender from '../0shared/ConditionRender'
 import * as prismic from '@prismicio/client'
 import { searchDocument } from '@/lib/actions/search.action'
 import { text } from '@/lib/utils/text'

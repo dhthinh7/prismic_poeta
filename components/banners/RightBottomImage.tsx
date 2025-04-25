@@ -1,6 +1,6 @@
 import { ImageField } from '@prismicio/client'
 import { PrismicNextImage } from '@prismicio/next'
-import ConditionRender from '../shared/ConditionRender'
+import ConditionRender from '../0shared/ConditionRender'
 
 interface IRightBottomImage {
   partnerImage: ImageField<never>

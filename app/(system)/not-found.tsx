@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Button from '@/components/shared/button/Button'
+import Button from '@/components/0shared/button/Button'
 
 export default function NotFound() {
   return (
