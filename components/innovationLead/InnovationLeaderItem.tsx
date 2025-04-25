@@ -1,6 +1,6 @@
 import React from 'react'
 import { PrismicImage } from '@prismicio/react'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 import { Simplify } from '@/prismicio-types'
 import { Content, isFilled } from '@prismicio/client'
 import { createClient } from '@/prismicio'

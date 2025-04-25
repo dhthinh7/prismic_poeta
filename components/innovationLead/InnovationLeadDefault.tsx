@@ -1,8 +1,8 @@
 import React from 'react'
 import { Content } from '@prismicio/client'
-import ConditionRender from '../0shared/ConditionRender'
+import ConditionRender from '../shared/ConditionRender'
 import InnovationLeaderItem from './InnovationLeaderItem'
-import HeaderSection from '../0shared/section/HeaderSection'
+import HeaderSection from '../shared/section/HeaderSection'
 
 interface IInnovationLeadDefault {
   slice: Content.InnovationLeadSlice

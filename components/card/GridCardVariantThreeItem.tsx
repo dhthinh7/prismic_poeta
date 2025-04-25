@@ -1,10 +1,10 @@
 import React from 'react'
 import { Content } from '@prismicio/client'
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 import { Simplify } from '@/prismicio-types'
-import ConditionRender from '../0shared/ConditionRender'
-import ClientButtonWrapper from '../0shared/button/ClientButtonWrapper'
+import ConditionRender from '../shared/ConditionRender'
+import ClientButtonWrapper from '../shared/button/ClientButtonWrapper'
 
 interface IGridCardVariantTwoItem {
   card: Simplify<Content.GridCardSliceGridCardVariantThreePrimaryCardsItem>

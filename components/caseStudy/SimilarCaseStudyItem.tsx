@@ -7,8 +7,8 @@ import AngleRight from '../icons/AngleRight'
 
 import useScreenDimensions from '@/hooks/useScreenDimensions'
 import useElementChildrenBounding from '@/hooks/useElementChildrenBounding'
-import Button from '../0shared/button/Button'
-import RichText from '../0shared/RichText'
+import Button from '../shared/button/Button'
+import RichText from '../shared/RichText'
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next'
 import { BreadcrumbMapper } from '@/lib/utils/dataMapper.util'
 

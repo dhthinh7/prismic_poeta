@@ -1,6 +1,6 @@
 import SectionWrapper from '@/components/layout/SectionWrapper'
 import SliceWrapper from '@/components/layout/SliceWrapper'
-import RichText from '@/components/0shared/RichText'
+import RichText from '@/components/shared/RichText'
 import { Content } from '@prismicio/client'
 import { SliceComponentProps } from '@prismicio/react'
 

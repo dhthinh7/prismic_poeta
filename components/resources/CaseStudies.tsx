@@ -1,6 +1,6 @@
 import React from 'react'
 import { Content } from '@prismicio/client'
-import HeaderSection from '../0shared/section/HeaderSection'
+import HeaderSection from '../shared/section/HeaderSection'
 import { CaseStudyList } from './CaseStudyList'
 import { CategoryDocument } from '@/prismicio-types'
 

@@ -8,19 +8,19 @@ import { z } from 'zod'
 
 // Component
 import { TalkToExportSchema } from '@/lib/validations'
-import CustomInput from '../0shared/ui/CustomInput'
+import CustomInput from '../shared/ui/CustomInput'
 import { Checkbox } from '../ui/checkbox'
-import CustomTextArea from '../0shared/ui/CustomTextArea'
+import CustomTextArea from '../shared/ui/CustomTextArea'
 // import ReCAPTCHA from 'react-google-recaptcha'
 import { IEmailAppendData } from '@/lib/model/mail.type'
 import { addSheetData } from '@/lib/actions/sheet.action'
 import { TalkToExportDataMapper } from '@/lib/utils/dataMapper.util'
-import ConditionRender from '../0shared/ConditionRender'
+import ConditionRender from '../shared/ConditionRender'
 import { cn } from '@/lib/utils'
 import { useAppDispatch } from '@/lib/store/hooks'
 import { openModal } from '@/lib/store/slices/globalModal.slice'
 import ThankForm from './ThankForm'
-import Button from '../0shared/button/Button'
+import Button from '../shared/button/Button'
 
 const eligibilities = [
   'Incorporated at the national or provincial level or be a Canadian resident sole proprietor',

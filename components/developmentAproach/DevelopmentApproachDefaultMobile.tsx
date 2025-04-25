@@ -3,14 +3,14 @@
 import React, { useMemo, useRef } from 'react'
 import { Content } from '@prismicio/client'
 import { E_SCREEN_SIZE } from '@/constants/enum'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 import { PrismicNextImage } from '@prismicio/next'
-import ConditionRender from '../0shared/ConditionRender'
+import ConditionRender from '../shared/ConditionRender'
 import { PrismicLink } from '@prismicio/react'
 import { cn } from '@/lib/utils'
 import useElementBounding from '@/hooks/useElementBounding'
 import useScreenDimensions from '@/hooks/useScreenDimensions'
-import HeaderSection from '../0shared/section/HeaderSection'
+import HeaderSection from '../shared/section/HeaderSection'
 
 interface IDevelopmentApproachDefaultMobile {
   slice: Content.DevelopmentApproachSlice

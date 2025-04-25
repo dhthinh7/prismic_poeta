@@ -3,7 +3,7 @@ import React from 'react'
 import * as prismic from '@prismicio/client'
 import { AllDocumentTypes, BlogDocumentData, Simplify } from '@/prismicio-types'
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next'
-import Button from '../0shared/button/Button'
+import Button from '../shared/button/Button'
 import { client } from '@/prismicio'
 
 type TBlogDocument = Omit<AllDocumentTypes, 'data'> & {

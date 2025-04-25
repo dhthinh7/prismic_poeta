@@ -1,6 +1,6 @@
 import React from 'react'
 import { PrismicNextImage } from '@prismicio/next'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 import { ImageField, RichTextField } from '@prismicio/client'
 
 interface IGridCardVariantTwoItem {

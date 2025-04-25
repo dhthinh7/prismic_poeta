@@ -1,12 +1,12 @@
 import React from 'react'
 import { Content } from '@prismicio/client'
-import ConditionRender from '../0shared/ConditionRender'
+import ConditionRender from '../shared/ConditionRender'
 import { client } from '@/prismicio'
 import * as prismic from '@prismicio/client'
 import { CaseStudyDocument, CategoryDocument } from '@/prismicio-types'
 import SimilarCaseStudyItem from './SimilarCaseStudyItem'
 import SimilarCaseStudyDefaultMobile from './SimilarCaseStudyDefaultMobile'
-import HeaderSection from '../0shared/section/HeaderSection'
+import HeaderSection from '../shared/section/HeaderSection'
 
 interface ICaseStudyDefault {
   slice: Content.CaseStudySlice

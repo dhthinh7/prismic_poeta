@@ -2,10 +2,10 @@
 
 import React, { useState } from 'react'
 import { Content } from '@prismicio/client'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 import { PrismicImage } from '@prismicio/react'
 import { cn } from '@/lib/utils'
-import Button from '../0shared/button/Button'
+import Button from '../shared/button/Button'
 
 interface ITextWithImageDefault {
   slice: {

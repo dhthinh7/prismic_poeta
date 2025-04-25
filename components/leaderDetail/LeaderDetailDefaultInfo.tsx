@@ -1,6 +1,6 @@
 import { RichTextField } from '@prismicio/client'
 import React from 'react'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 
 interface ILeaderDetailDefaultInfo {
   title: RichTextField

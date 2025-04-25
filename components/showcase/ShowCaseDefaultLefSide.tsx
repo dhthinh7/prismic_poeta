@@ -1,10 +1,10 @@
 import React from 'react'
 import { cn } from '@/lib/utils'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 import { Content } from '@prismicio/client'
-import ConditionRender from '../0shared/ConditionRender'
+import ConditionRender from '../shared/ConditionRender'
 import { PrismicImage } from '@prismicio/react'
-import ClientButtonWrapper from '../0shared/button/ClientButtonWrapper'
+import ClientButtonWrapper from '../shared/button/ClientButtonWrapper'
 
 import ShowCaseCounterUp from './ShowCaseCounterUp'
 

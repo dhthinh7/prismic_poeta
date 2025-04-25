@@ -1,11 +1,11 @@
 import React from 'react'
 import { Simplify } from '@/prismicio-types'
 import { Content, ImageField, RichTextField } from '@prismicio/client'
-import Line from '../0shared/line/Line'
+import Line from '../shared/line/Line'
 import { PrismicImage } from '@prismicio/react'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 import { PrismicNextImage } from '@prismicio/next'
-import ClientButtonWrapper from '../0shared/button/ClientButtonWrapper'
+import ClientButtonWrapper from '../shared/button/ClientButtonWrapper'
 
 interface IGridCardVariantFourItem {
   card: Simplify<Content.GridCardSliceGridCardVariantFourPrimaryCardsItem>

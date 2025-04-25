@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Content } from '@prismicio/client'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 
 interface ITextOnly {
   slice: {

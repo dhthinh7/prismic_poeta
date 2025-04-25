@@ -1,7 +1,7 @@
 import { Simplify } from '@/prismicio-types'
 import { Content } from '@prismicio/client'
 import React from 'react'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 import { PrismicNextImage } from '@prismicio/next'
 
 interface ICareer {

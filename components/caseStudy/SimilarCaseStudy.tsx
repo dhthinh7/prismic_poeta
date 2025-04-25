@@ -1,7 +1,7 @@
 import React from 'react'
 import { CaseStudyDocument, CategoryDocument } from '@/prismicio-types'
 import { Content } from '@prismicio/client'
-import HeaderSection from '../0shared/section/HeaderSection'
+import HeaderSection from '../shared/section/HeaderSection'
 import SimilarCaseStudyList from './SimilarCaseStudyList'
 
 interface ISimilarCaseStudy {

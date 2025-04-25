@@ -3,7 +3,7 @@ import { KeyTextField, RichTextField } from '@prismicio/client'
 import { cn } from '@/lib/utils'
 import { prismicUtils } from '@/lib/utils/prismic.util'
 import { ITextPosition } from '@/lib/model/index.type.'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 
 interface ITitleSection {
   title: KeyTextField | RichTextField

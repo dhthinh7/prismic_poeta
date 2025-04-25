@@ -2,7 +2,7 @@ import SectionWrapper from '@/components/layout/SectionWrapper'
 import SliceWrapper from '@/components/layout/SliceWrapper'
 import { Content } from '@prismicio/client'
 import { SliceComponentProps } from '@prismicio/react'
-import CarouseSlice from '@/components/0carouseSlice/CarouseSlice'
+import CarouseSlice from '@/components/carouseSlice/CarouseSlice'
 
 /**
  * Props for `Carousel`.

@@ -2,13 +2,13 @@ import React from 'react'
 import { Content, GroupField, KeyTextField, RichTextField } from '@prismicio/client'
 
 import { Simplify } from '@/prismicio-types'
-import ConditionRender from '@/components/0shared/ConditionRender'
-import ClientButtonWrapper from '@/components/0shared/button/ClientButtonWrapper'
+import ConditionRender from '@/components/shared/ConditionRender'
+import ClientButtonWrapper from '@/components/shared/button/ClientButtonWrapper'
 import SectionWrapper from '../layout/SectionWrapper'
 import LeftBannerImage from './LeftBannerImage'
 import RightBannerImage from './RightBannerImage'
 import RightBottomImage from './RightBottomImage'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 
 interface IBannerWithButton {
   slice: {

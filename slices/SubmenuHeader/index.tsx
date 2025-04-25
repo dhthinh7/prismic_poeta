@@ -1,4 +1,4 @@
-import Line from '@/components/0shared/line/Line'
+import Line from '@/components/shared/line/Line'
 import { Content } from '@prismicio/client'
 import { PrismicNextLink } from '@prismicio/next'
 import { SliceComponentProps } from '@prismicio/react'

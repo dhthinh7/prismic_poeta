@@ -1,5 +1,5 @@
 import React from 'react'
-import RichText from '../0shared/RichText'
+import RichText from '../shared/RichText'
 import { RichTextField, SelectField } from '@prismicio/client'
 import { cn } from '@/lib/utils'
 

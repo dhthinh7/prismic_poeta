@@ -2,8 +2,8 @@ import React from 'react'
 
 import { Content } from '@prismicio/client'
 import { cn } from '@/lib/utils'
-import RichText from '../0shared/RichText'
-import ClientButtonWrapper from '../0shared/button/ClientButtonWrapper'
+import RichText from '../shared/RichText'
+import ClientButtonWrapper from '../shared/button/ClientButtonWrapper'
 import { PrismicNextImage } from '@prismicio/next'
 
 interface ITextWithImageButtonSecondary {

@@ -2,7 +2,7 @@
 
 import React, { Fragment, Suspense, useEffect, useMemo, useState } from 'react'
 import Hamburger from '../icons/Hamburger'
-import Drawer from '../0shared/drawer/Drawer'
+import Drawer from '../shared/drawer/Drawer'
 import ChevronDown from '../icons/ChevronDown'
 import { CategoryDocument, MenuItemSlice, SubMenuDocument } from '@/prismicio-types'
 import { isFilled, SliceZone } from '@prismicio/client'

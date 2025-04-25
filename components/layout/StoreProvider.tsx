@@ -1,6 +1,6 @@
 'use client'
 import { Provider } from 'react-redux'
-import GlobalModal from '../0shared/modal/GlobalModal'
+import GlobalModal from '../shared/modal/GlobalModal'
 import { store } from '@/lib/store/store'
 
 export default function StoreProvider({ children }: { children: React.ReactNode }) {
